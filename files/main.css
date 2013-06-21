@@ -1,0 +1,232 @@
+/* CSS Document - Developed by Fabio Rocha (https://fabiorochafg.github.io | fabiorochafg@gmail.com) */
+
+/* Base */
+* {
+    border: 0 none;
+    margin: 0;
+    outline: 0 none;
+    padding: 0;
+}
+a, a:link, a:active {
+    color: #173C5A;
+}
+a:hover {
+    color: #333333;
+    text-decoration: underline;
+}
+body {
+    font-family: "Lucida Grande", Verdana, Lucida, Helvetica, Arial, sans-serif;
+    font-size: 69%;
+}
+button,
+input[type="button"],
+input[type="submit"] {
+    clear: both;
+    cursor: pointer;
+    display: block;
+    font-size: 100%;
+    height: 26px;
+    padding: 0 5px;
+}
+code {
+    background: #F8F8F8;
+    border: 1px solid #DDDDDD;
+    border-radius: 5px;
+    padding: 0 3px;
+}
+dd {
+    font-weight: bold;
+    padding: 0 0 2px;
+}
+dt {
+    clear: left;
+    float: left;
+    margin: 0 5px 0 0;
+}
+fieldset {
+    background: #F8F8F8;
+    border: 1px solid #DDDDDD;
+    border-radius: 5px;
+    clear: both;
+    display: table;
+    margin: 10px 0 20px;
+    padding: 15px;
+}
+form {
+    margin: 10px 0;
+}
+h1 {
+    float: left;
+    margin: 10px 0;
+}
+h2 {
+    padding: 10px 0;
+}
+input[type="email"],
+input[type="file"],
+input[type="password"],
+input[type="text"] {
+    border: 1px solid #DDDDDD;
+    margin: 0 0 18px;
+    padding: 0 1%;
+    height: 24px;
+}
+input[type="email"]:focus,
+input[type="file"]:focus,
+input[type="password"]:focus,
+input[type="text"]:focus,
+select:focus,
+textarea:focus {
+    border: 1px solid #AAAAAA;
+}
+label {
+    margin: 0 0 2px;
+    padding: 0 2px 0 0;
+}
+select {
+    border: 1px solid #DDDDDD;
+    height: 24px;
+    margin: 0 0 18px;
+}
+select option {
+    padding: 3px 5px;
+}
+select[multiple="multiple"] {
+    height: auto;
+}
+select[multiple="multiple"] option {
+    padding: 5px;
+}
+table {
+    border-spacing: 0;
+    width: 100%;
+}
+td, th {
+    padding: 5px;
+}
+textarea {
+    border: 1px solid #DDDDDD;
+    height: 130px;
+    margin: 1px 0 5px;
+    width: 480px;   
+}
+ul {
+    line-height: 1.5em;
+}
+ul ul {
+    padding: 0 0 0 15px;
+}
+
+/* Layout */
+#wrapper {
+    width: 100%;
+}
+.container {
+    clear: both;
+    margin: 0 auto;
+    overflow: hidden;
+    padding: 0 2%;
+    width: 96%;
+}
+
+/* Header */
+#header {
+    height: 120px;
+}
+#header h1 a {
+    background: url(../images/logo.png) no-repeat -6px 0;
+    display: block;
+    height: 100px;
+    text-indent: -9000px;
+    width: 186px;
+}
+#accessibility {
+    float: right;
+    margin: 10px;
+}
+#accessibility a {
+    display: block;
+    height: 26px;
+    text-indent: -9000px;
+    width: 26px;
+}
+#accessibility a:hover,
+#header h1 a:hover {
+    opacity: 0.5;
+}
+
+/* Content Area */
+#content {
+    float: right;
+    padding: 1% 0 1% 2%;
+    width: 79%;
+}
+#content ol,
+#content ul {
+    padding: 0 0 10px 20px;
+}
+#content p {
+    line-height: 1.5em;
+    padding: 0 0 10px;
+    text-align: justify;
+}
+#menu {
+    float: left;
+    padding: 1% 0;
+    width: 19%;
+}
+#menu li {
+    list-style: none;
+}
+#menu li a {
+    background: #222;
+    border-bottom: 1px solid #333;
+    color: #fff;
+    display: block;
+    font-weight: bold;
+    height: 26px;
+    line-height: 26px;
+    padding: 0 10px;
+    text-decoration: none;
+    text-shadow: 1px 1px 1px #000000;
+}
+#menu li a:hover,
+#menu li.active a {
+    background: #999;
+}
+
+/* Footer */
+#footer {
+    color: #666;
+    padding: 20px 0;
+    text-align: center;
+}
+#footer a {
+    color: #333;
+}
+#footer a:hover {
+    color: #666;
+}
+
+/* Classes */
+.invisible-element {
+    display: block;
+    height: 0;
+    margin: 0;
+    padding: 0;
+    text-indent: -9000px;
+    width: 0;
+}
+
+/* Media-queries */
+@media only screen and (max-device-width: 480px), only screen and (min-device-width: 481px) and (max-device-width: 991px) and (orientation:portrait), only screen and (min-device-width: 481px) and (max-device-width: 991px) and (orientation:landscape) {
+    #accessibility li {
+        float: none;
+    }
+    #content,
+    #menu {
+        float: none;
+        padding: 0 1%;
+        width: 98%;
+    }
+}
