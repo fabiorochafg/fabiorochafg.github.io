@@ -15,8 +15,9 @@ a:hover {
     text-decoration: underline;
 }
 body {
-    font-family: "Lucida Grande", Verdana, Lucida, Helvetica, Arial, sans-serif;
-    font-size: 69%;
+    background: #111;
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 100%;
 }
 button,
 input[type="button"],
@@ -119,19 +120,23 @@ ul ul {
 
 /* Layout */
 #wrapper {
+    position: relative;
     width: 100%;
 }
 .container {
-    clear: both;
     margin: 0 auto;
     overflow: hidden;
-    padding: 0 2%;
-    width: 96%;
+    padding: 4% 10% 7%;
+    width: 80%;
 }
 
 /* Header */
 #header {
-    height: 120px;
+    background: url("../images/bg.jpg") no-repeat center 0 / 100% auto #111;
+    position: relative;
+}
+#header > div {
+    background: rgba(0, 0, 0, 0.5);
 }
 #header h1 a {
     background: url(../images/logo.png) no-repeat -6px 0;
@@ -140,53 +145,30 @@ ul ul {
     text-indent: -9000px;
     width: 186px;
 }
-#accessibility {
-    float: right;
-    margin: 10px;
-}
-#accessibility a {
-    display: block;
-    height: 26px;
-    text-indent: -9000px;
-    width: 26px;
-}
-#accessibility a:hover,
 #header h1 a:hover {
     opacity: 0.5;
 }
 
-/* Content Area */
-#content {
-    float: right;
-    padding: 1% 0 1% 2%;
-    width: 79%;
-}
-#content ol,
-#content ul {
-    padding: 0 0 10px 20px;
-}
-#content p {
-    line-height: 1.5em;
-    padding: 0 0 10px;
-    text-align: justify;
-}
+/* Menu */
 #menu {
-    float: left;
-    padding: 1% 0;
-    width: 19%;
+    background: #000000;
+    border-top: 1px solid #333333;
+    bottom: 0;
+    padding: 0 10%;
+    position: fixed;
 }
 #menu li {
     list-style: none;
 }
 #menu li a {
-    background: #222;
-    border-bottom: 1px solid #333;
     color: #fff;
     display: block;
+    float: left;
+    font-size: 150%;
     font-weight: bold;
-    height: 26px;
-    line-height: 26px;
-    padding: 0 10px;
+    height: 50px;
+    line-height: 50px;
+    padding: 0 40px 0 0;
     text-decoration: none;
     text-shadow: 1px 1px 1px #000000;
 }
@@ -195,16 +177,25 @@ ul ul {
     background: #999;
 }
 
-/* Footer */
-#footer {
-    color: #666;
-    padding: 20px 0;
-    text-align: center;
+/* Repositories */
+#repositories {
+    background: #666666;
 }
-#footer a {
+#repositories p {
+    line-height: 1.5em;
+    padding: 0 0 10px;
+    text-align: justify;
+}
+
+/* Contact */
+#contact {
+    background: #ffffff;
+    color: #666666;
+}
+#contact a {
     color: #333;
 }
-#footer a:hover {
+#contact a:hover {
     color: #666;
 }
 
