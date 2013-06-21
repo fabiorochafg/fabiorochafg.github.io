@@ -58,7 +58,7 @@ form {
 }
 h1 {
     float: left;
-    margin: 10px 0;
+    padding: 4% 10%;
 }
 h2 {
     padding: 10px 0;
@@ -180,6 +180,7 @@ ul ul {
 /* Repositories */
 #repositories {
     background: #666666;
+    color: #dddddd;
 }
 #repositories p {
     line-height: 1.5em;
