@@ -32,6 +32,16 @@ h1 {
     float: left;
     padding: 4% 10%;
 }
+h1 a {
+    background: url(../images/logo.png) no-repeat -6px 0;
+    display: block;
+    height: 160px;
+    text-indent: -9000px;
+    width: 160px;
+}
+h1 a:hover {
+    opacity: 0.5;
+}
 h2 {
     font-size: 280%;
     padding: 10px 0 30px;
@@ -63,15 +73,47 @@ ul {
 #header > div {
     background: rgba(0, 0, 0, 0.8);
 }
-#header h1 a {
-    background: url(../images/logo.png) no-repeat -6px 0;
-    display: block;
-    height: 160px;
-    text-indent: -9000px;
-    width: 160px;
+#header > div div {
+    float: right;
+    margin: 18% 10% 0 0;
+    width: 50%;
 }
-#header h1 a:hover {
-    opacity: 0.5;
+#header a {
+    color: #aaaaaa;
+    text-decoration: none;
+}
+#header a:hover {
+    color: #dddddd;
+}
+#header dl {
+    list-style: none;
+    margin: 15px 0 0;
+}
+#header dt {
+    background: #000000;
+    color: #eeeeee;
+    font-size: 110%;
+    height: 30px;
+    line-height: 30px;
+    margin: 0 0 10px;
+    padding: 5px 15px;
+}
+#header dd {
+    background: #555555;
+    display: table;
+    font-size: 130%;
+    height: 30px;
+    line-height: 30px;
+    margin: 0 0 10px;
+    padding: 5px 15px;
+}
+#header dd:hover {
+    background: #444;
+}
+#header p {
+    color: #CCCCCC;
+    font-size: 160%;
+    padding: 30px 0 15px;
 }
 
 /* Menu */
@@ -108,34 +150,8 @@ ul {
     color: #666666;
     padding: 4% 10% 6%;
 }
-#repositories a {
-    color: #666666;
-    display: block;
-    line-height: 16px;
-    padding: 10px 0;
-    text-align: center;
-    text-decoration: none;
-}
-#repositories a:hover {
-    color: #111111;
-}
-#repositories li {
-    float: left;
-    height: 200px;
-    list-style: none;
-    margin: 0 0 5%;
-    overflow: auto;
-    position: relative;
-    width: 21.25%;
-}
-#repositories li.middle {
-    margin: 0 5% 5%;
-}
-#repositories li.right {
-    margin: 0 5% 5% 0;
-}  
 #repositories li li {
-    background: #eeeeee;
+    background: #cccccc;
     font-size: 90%;
     height: auto;
     margin: 0;
@@ -143,64 +159,107 @@ ul {
     width: 33.33%;
 }
 #repositories li li:hover {
-    background: #cccccc;
+    background: #aaaaaa;
+}
+#repositories li li a {
+    color: #666666;
+    display: block;
+    line-height: 16px;
+    padding: 10px 0;
+    text-align: center;
+    text-decoration: none;
+}
+#repositories li li a:hover {
+    color: #111111;
 }
 #repositories li li strong {
     clear: both;
     display: block;
 }
 #repositories li ul {
-    position: absolute;
-    bottom: 0;
     width: 100%;
 }
 #repositories p {
-    line-height: 1.3em;
-    padding: 5px 0 10px;
-    text-align: justify;
+    height: 100px;
+    padding: 30px 10%;
+}
+#repositories .preview-bluray-dvd-cd-book-collection > a {
+    background: url(../images/preview-bluray-dvd-cd-book-collection.png) no-repeat 0 0 / 100% auto;
+}
+#repositories .preview-html-blank-template > a {
+    background: url(../images/preview-html-blank-template.png) no-repeat 0 0 / 100% auto;
+}
+#repositories .preview-joomla-3-blank-template > a {
+    background: url(../images/preview-joomla-3-blank-template.png) no-repeat 0 0 / 100% auto;
 }
 
-/* Contact */
-#contact {
+/* Portfolio */
+#portfolio {
     background: #666666;
     color: #dddddd;
     padding: 4% 10% 5%;
 }
-#contact a {
-    color: #aaaaaa;
-    text-decoration: none;
+#portfolio li > a.image {
+    box-shadow: 0px 0px 5px #222222;
 }
-#contact a:hover {
-    color: #dddddd;
+#portfolio p {
+    line-height: 160px;    
 }
-#contact dl {
+#portfolio .portfolio-asifrn a {
+    background: url(../images/portfolio-asifrn.png) no-repeat 0 0 / 100% auto;
+}
+#portfolio .portfolio-esmarn a {
+    background: url(../images/portfolio-esmarn.png) no-repeat 0 0 / 100% auto;
+}
+#portfolio .portfolio-flusser a {
+    background: url(../images/portfolio-flusser.png) no-repeat 0 0 / 100% auto;
+}
+#portfolio .portfolio-hatha-contabilidade a {
+    background: url(../images/portfolio-hatha-contabilidade.png) no-repeat 0 0 / 100% auto;
+}
+#portfolio .portfolio-niklason a {
+    background: url(../images/portfolio-niklason.png) no-repeat 0 0 / 100% auto;
+}
+#portfolio .portfolio-soluti a {
+    background: url(../images/portfolio-soluti.png) no-repeat 0 0 / 100% auto;
+}
+
+/* Classes */
+.boxes li {
+    float: left;
     list-style: none;
-    margin: 15px 0 0;
+    margin: 0 0 5%;
+    position: relative;
+    width: 30%;
 }
-#contact dt {
-    background: #000000;
-    color: #eeeeee;
+.boxes li.middle {
+    margin: 0 5% 5%;
+}
+.boxes li > a.image {
+    display: block;
+    height: 160px;
+    margin: 5px 0 0;
+    opacity: 0.7;
+    position: relative;
+}
+.boxes li > a.image:hover {
+    opacity: 1;
+}
+.boxes li > a.image:hover > p {
+    background: rgba(0, 0, 0, 0.9);
+    opacity: 1;
+}
+.boxes p {
+    color: #ffffff;
     font-size: 110%;
-    height: 30px;
-    line-height: 30px;
-    margin: 0 0 10px;
-    padding: 5px 15px;
-}
-#contact dd {
-    background: #555555;
-    display: table;
-    font-size: 130%;
-    height: 30px;
-    line-height: 30px;
-    margin: 0 0 10px;
-    padding: 5px 15px;
-}
-#contact dd:hover {
-    background: #444;
-}
-#contact p {
-    font-size: 160%;
-    padding: 30px 0 15px;
+    height: 160px;
+    opacity: 0;
+    padding: 0 10%;
+    position: absolute;
+    text-align: center;
+    top: 0;
+    width: 80%;
+    z-index: 1;
 }
 
 /* Media-queries */
