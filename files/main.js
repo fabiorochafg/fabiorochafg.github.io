@@ -1,4 +1,4 @@
-/* JS Document - Developed by Fabio Rocha (https://fabiorochafg.github.io | fabiorochafg@gmail.com) */
+/* JS Document - Developed by Fabio Rocha (http://fabiorochafg.github.io | fabiorochafg@gmail.com) */
 
 $(document).ready(function() {
 	$("#header, #header > div").css("height", $(window).height());

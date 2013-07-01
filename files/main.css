@@ -115,6 +115,9 @@ ul {
     font-size: 160%;
     padding: 30px 0 15px;
 }
+#header p a {
+    text-decoration: underline;
+}
 
 /* Menu */
 #menu {
@@ -148,7 +151,7 @@ ul {
 #repositories {
     background: #ffffff;
     color: #666666;
-    padding: 4% 10% 6%;
+    padding: 4% 10% 8%;
 }
 #repositories li li {
     background: #cccccc;
@@ -197,7 +200,7 @@ ul {
 #portfolio {
     background: #666666;
     color: #dddddd;
-    padding: 4% 10% 5%;
+    padding: 4% 10%;
 }
 #portfolio li > a.image {
     box-shadow: 0px 0px 5px #222222;
@@ -264,5 +267,65 @@ ul {
 
 /* Media-queries */
 @media only screen and (max-device-width: 480px), only screen and (min-device-width: 481px) and (max-device-width: 991px) and (orientation:portrait), only screen and (min-device-width: 481px) and (max-device-width: 991px) and (orientation:landscape) {
-
+    #header {
+        background: #444444;
+    }
+    #header > div div {
+        margin: 4% 10% 0;
+        width: 80%;
+    }
+    #header dt,
+    #header dd {
+        font-size: 105%;
+    }
+    #menu li a {
+        font-size: 120%;
+    }
+    #repositories {
+        padding: 4% 10% 12%;
+    }
+    .boxes li {
+        width: 100%;
+    }
+    .boxes li.middle {
+        margin: 0 0 5%;
+    }
+}
+@media screen and (max-width: 1024px) {
+    .boxes li {
+        width: 47.5%;
+    }
+    .boxes li:nth-child(2n+1) {
+        float: right;
+    }
+    .boxes li.middle {
+        margin: 0 0 5%;
+    }
+}
+@media screen and (max-width: 800px) {
+    #header {
+        background: #444444;
+    }
+    #header > div div {
+        margin: 4% 10% 0;
+        width: 80%;
+    }
+    #header dt,
+    #header dd {
+        font-size: 105%;
+    }
+    #menu li a {
+        font-size: 120%;
+    }
+    #repositories {
+        padding: 4% 10% 12%;
+    }
+}
+@media screen and (max-width: 600px) {
+    .boxes li {
+        width: 100%;
+    }
+    .boxes li.middle {
+        margin: 0 0 5%;
+    }
 }
