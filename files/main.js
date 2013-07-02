@@ -1,7 +1,7 @@
 /* JS Document - Developed by Fabio Rocha (http://fabiorochafg.github.io | fabiorochafg@gmail.com) */
 
 $(document).ready(function() {
-	$("#header, #header > div").css("height", $(window).height());
+	$("#header, #header > div, #portfolio, #repositories").css("height", $(window).height());
 });
 
 /* Google Analyctis */
