@@ -148,10 +148,60 @@ ul {
     color: #999999;
 }
 
+/* Gists */
+#gists {
+    background: #eeeeee;
+    color: #666666;
+    padding: 4% 10% 8%;
+}
+#gists a {
+    color: #777777;
+}
+
+/* Portfolio */
+#portfolio {
+    background: #666666;
+    color: #dddddd;
+    padding: 4% 10%;
+}
+#portfolio h3 span {
+    float: right;
+    font-size: 80%; 
+}
+#portfolio li > a.image {
+    box-shadow: 0px 0px 5px #222222;
+}
+#portfolio p {
+    line-height: 160px;    
+}
+#portfolio .boxes > li > a {
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    background-size: 100% auto;
+}
+#portfolio .portfolio-asifrn a {
+    background-image: url(../images/portfolio-asifrn.png);
+}
+#portfolio .portfolio-esmarn a {
+    background-image: url(../images/portfolio-esmarn.png);
+}
+#portfolio .portfolio-flusser a {
+    background-image: url(../images/portfolio-flusser.png);
+}
+#portfolio .portfolio-hatha-contabilidade a {
+    background-image: url(../images/portfolio-hatha-contabilidade.png);
+}
+#portfolio .portfolio-niklason a {
+    background-image: url(../images/portfolio-niklason.png);
+}
+#portfolio .portfolio-soluti a {
+    background-image: url(../images/portfolio-soluti.png);
+}
+
 /* Repositories */
 #repositories {
-    background: #ffffff;
-    color: #666666;
+    background: #aaaaaa;
+    color: #444444;
     padding: 4% 10% 8%;
 }
 #repositories li li {
@@ -163,10 +213,10 @@ ul {
     width: 33.33%;
 }
 #repositories li li:hover {
-    background: #aaaaaa;
+    background: #999999;
 }
 #repositories li li a {
-    color: #666666;
+    color: #444444;
     display: block;
     line-height: 16px;
     padding: 10px 0;
@@ -200,42 +250,6 @@ ul {
 }
 #repositories .preview-joomla-3-blank-template > a {
     background-image: url(../images/preview-joomla-3-blank-template.png);
-}
-
-/* Portfolio */
-#portfolio {
-    background: #666666;
-    color: #dddddd;
-    padding: 4% 10%;
-}
-#portfolio li > a.image {
-    box-shadow: 0px 0px 5px #222222;
-}
-#portfolio p {
-    line-height: 160px;    
-}
-#portfolio .boxes > li > a {
-    background-repeat: no-repeat;
-    background-position: 0 0;
-    background-size: 100% auto;
-}
-#portfolio .portfolio-asifrn a {
-    background-image: url(../images/portfolio-asifrn.png);
-}
-#portfolio .portfolio-esmarn a {
-    background-image: url(../images/portfolio-esmarn.png);
-}
-#portfolio .portfolio-flusser a {
-    background-image: url(../images/portfolio-flusser.png);
-}
-#portfolio .portfolio-hatha-contabilidade a {
-    background-image: url(../images/portfolio-hatha-contabilidade.png);
-}
-#portfolio .portfolio-niklason a {
-    background-image: url(../images/portfolio-niklason.png);
-}
-#portfolio .portfolio-soluti a {
-    background-image: url(../images/portfolio-soluti.png);
 }
 
 /* Classes */
@@ -274,6 +288,22 @@ ul {
     top: 0;
     width: 80%;
     z-index: 1;
+}
+.list li {
+    background: #bbbbbb;
+    list-style: none;
+    margin: 1% 0;
+}
+.list li:hover {
+    background: #ddd;
+}
+.list li > a {
+    color: #333333 !important;
+    display: block;
+    font-size: 120%;
+    padding: 1%;
+    text-decoration: none;
+    width: 98%;
 }
 
 /* Media-queries */
