@@ -67,6 +67,7 @@ ul {
 
 /* Header */
 #header {
+    background: url("../images/bg.jpg") no-repeat center 0 #111;
     background: url("../images/bg.jpg") no-repeat center 0 / 100% auto #111;
     position: relative;
 }
@@ -186,14 +187,19 @@ ul {
     height: 100px;
     padding: 30px 10%;
 }
+#repositories .boxes > li > a {
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    background-size: 100% auto;
+}
 #repositories .preview-bluray-dvd-cd-book-collection > a {
-    background: url(../images/preview-bluray-dvd-cd-book-collection.png) no-repeat 0 0 / 100% auto;
+    background-image: url(../images/preview-bluray-dvd-cd-book-collection.png);
 }
 #repositories .preview-html-blank-template > a {
-    background: url(../images/preview-html-blank-template.png) no-repeat 0 0 / 100% auto;
+    background-image: url(../images/preview-html-blank-template.png);
 }
 #repositories .preview-joomla-3-blank-template > a {
-    background: url(../images/preview-joomla-3-blank-template.png) no-repeat 0 0 / 100% auto;
+    background-image: url(../images/preview-joomla-3-blank-template.png);
 }
 
 /* Portfolio */
@@ -208,23 +214,28 @@ ul {
 #portfolio p {
     line-height: 160px;    
 }
+#portfolio .boxes > li > a {
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    background-size: 100% auto;
+}
 #portfolio .portfolio-asifrn a {
-    background: url(../images/portfolio-asifrn.png) no-repeat 0 0 / 100% auto;
+    background-image: url(../images/portfolio-asifrn.png);
 }
 #portfolio .portfolio-esmarn a {
-    background: url(../images/portfolio-esmarn.png) no-repeat 0 0 / 100% auto;
+    background-image: url(../images/portfolio-esmarn.png);
 }
 #portfolio .portfolio-flusser a {
-    background: url(../images/portfolio-flusser.png) no-repeat 0 0 / 100% auto;
+    background-image: url(../images/portfolio-flusser.png);
 }
 #portfolio .portfolio-hatha-contabilidade a {
-    background: url(../images/portfolio-hatha-contabilidade.png) no-repeat 0 0 / 100% auto;
+    background-image: url(../images/portfolio-hatha-contabilidade.png);
 }
 #portfolio .portfolio-niklason a {
-    background: url(../images/portfolio-niklason.png) no-repeat 0 0 / 100% auto;
+    background-image: url(../images/portfolio-niklason.png);
 }
 #portfolio .portfolio-soluti a {
-    background: url(../images/portfolio-soluti.png) no-repeat 0 0 / 100% auto;
+    background-image: url(../images/portfolio-soluti.png);
 }
 
 /* Classes */
