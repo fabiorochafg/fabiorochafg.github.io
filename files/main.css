@@ -44,7 +44,7 @@ h1 a:hover {
 }
 h2 {
     font-size: 280%;
-    padding: 10px 0 30px;
+    padding: 10px 0 40px;
 }
 h3 {
     font-size: 130%;
@@ -152,7 +152,7 @@ ul {
 #gists {
     background: #eeeeee;
     color: #666666;
-    padding: 4% 10% 8%;
+    padding: 4% 10% 9%;
 }
 #gists a {
     color: #777777;
@@ -268,69 +268,77 @@ ul {
 #repositories {
     background: #aaaaaa;
     color: #444444;
-    padding: 4% 10% 8%;
+    padding: 4% 10%;
+}
+#repositories div {
+    background-repeat: no-repeat;
+    background-position: 0 5px;
+    background-size: 45px auto;
+    border-right: 1px solid #444444;
+    float: left;
+    overflow: hidden;
+    padding: 0 2% 0 0;
+    width: 60%;
 }
 #repositories h3 {
     float: left;
-    /*width: 60%;*/
+    padding: 0 0 0 60px;
 }
-#repositories img {
-    display: none;
-    float: right;
-    height: 160px;
-    margin: 5px 0 0;
-    opacity: 0.7;
+#repositories p {
+    color: #eeeeee;
+    float: left;
+    line-height: 20px;
+    padding: 0 0 5px 60px;
+    text-align: justify;
+}
+#repositories > ul {
+    width: 100%;
+}
+#repositories > ul > li {
+    float: left;
+    list-style: none;
+    margin: 0 0 5%;
     position: relative;
-    width: 35%;
+    width: 100%;
 }
-#repositories li li {
-    background: #cccccc;
+#repositories .boxes {
+    float: right;
+    width: 37%;
+}
+#repositories .boxes li {
     float: left;
     font-size: 90%;
     height: auto;
     list-style: none;
     margin: 0;
     text-align: center;
-    width: 33.33%;
+    width: 50%;
 }
-#repositories li li:hover {
-    background: #999999;
+#repositories .boxes li:hover {
+    background: #cccccc;
 }
-#repositories li li a {
+#repositories .boxes li a {
     color: #444444;
     display: block;
     line-height: 16px;
-    padding: 10px 0;
     text-align: center;
     text-decoration: none;
 }
-#repositories li li a:hover {
+#repositories .boxes li a:hover {
     color: #111111;
 }
-#repositories li li strong {
-    clear: both;
-    display: block;
+#repositories .boxes li strong {
+    /*clear: both;
+    display: block;*/
 }
-#repositories li ul {
-    float: left;
-    /*width: 60%;*/
+#repositories .preview-bluray-dvd-cd-book-collection div {
+    background-image: url(../images/preview-bluray-dvd-cd-book-collection.png);
 }
-#repositories p {
-    color: #ffffff;
-    font-size: 110%;
-    float: left;
-    /*width: 60%;*/
+#repositories .preview-html-blank-template div {
+    background-image: url(../images/preview-html-blank-template.png);
 }
-#repositories .boxes {
-    margin: 0 -2.5%;
-    overflow: hidden;
-}
-#repositories .boxes > li {    
-    float: left;
-    list-style: none;
-    margin: 0 2.5% 5%;
-    position: relative;
-    width: 45%;
+#repositories .preview-joomla-3-blank-template div {
+    background-image: url(../images/preview-joomla-3-blank-template.png);
 }
 
 /* Media-queries */
