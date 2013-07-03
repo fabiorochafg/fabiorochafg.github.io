@@ -157,6 +157,36 @@ ul {
 #gists a {
     color: #777777;
 }
+#gists .gists {
+    margin: 0 -1%;
+    overflow: hidden;
+}
+#gists .gists li {
+    background: #bbbbbb;
+    float: left;
+    list-style: none;
+    margin: 1%;
+    width: 98%;
+}
+#gists .gists li:hover {
+    background: #ddd;
+}
+#gists .gists li > a {
+    color: #333333;
+    display: block;
+    font-size: 115%;
+    padding: 1%;
+    text-decoration: none;
+    width: 98%;
+}
+#gists .gists .box6 {
+    width: 48%;
+}
+#gists .gists .box6 a {
+    padding: 2%;
+    width: 96%;
+}
+
 
 /* Portfolio */
 #portfolio {
@@ -164,20 +194,47 @@ ul {
     color: #dddddd;
     padding: 4% 10%;
 }
-#portfolio h3 span {
-    float: right;
-    font-size: 80%; 
-}
-#portfolio li > a.image {
-    box-shadow: 0px 0px 5px #222222;
-}
-#portfolio p {
-    line-height: 160px;    
-}
-#portfolio .boxes > li > a {
+#portfolio a {
     background-repeat: no-repeat;
     background-position: 0 0;
     background-size: 100% auto;
+    box-shadow: 0px 0px 5px #222222;
+    display: block;
+    height: 160px;
+    margin: 5px 0 0;
+    opacity: 0.7;
+    position: relative;
+}
+#portfolio a:hover {
+    opacity: 1;
+}
+#portfolio a:hover p {
+    background: rgba(255, 255, 255, 0.9);
+    color: #111111;
+    opacity: 1;
+}
+#portfolio li {
+    float: left;
+    list-style: none;
+    margin: 0 0 5%;
+    position: relative;
+    width: 30%;
+}
+#portfolio li.middle {
+    margin: 0 5% 5%;
+}
+#portfolio p {
+    color: #ffffff;
+    font-size: 110%;
+    height: 160px;
+    line-height: 160px; 
+    opacity: 0;
+    padding: 0 10%;
+    position: absolute;
+    text-align: center;
+    top: 0;
+    width: 80%;
+    z-index: 2;
 }
 #portfolio .portfolio-asifrn a {
     background-image: url(../images/portfolio-asifrn.png);
@@ -188,8 +245,17 @@ ul {
 #portfolio .portfolio-flusser a {
     background-image: url(../images/portfolio-flusser.png);
 }
+#portfolio .portfolio-foco-tgma a {
+    background-image: url(../images/portfolio-foco-tgma.png);
+}
 #portfolio .portfolio-hatha-contabilidade a {
     background-image: url(../images/portfolio-hatha-contabilidade.png);
+}
+#portfolio .portfolio-ifb a {
+    background-image: url(../images/portfolio-ifb.png);
+}
+#portfolio .portfolio-lader a {
+    background-image: url(../images/portfolio-lader.png);
 }
 #portfolio .portfolio-niklason a {
     background-image: url(../images/portfolio-niklason.png);
@@ -204,10 +270,25 @@ ul {
     color: #444444;
     padding: 4% 10% 8%;
 }
+#repositories h3 {
+    float: left;
+    /*width: 60%;*/
+}
+#repositories img {
+    display: none;
+    float: right;
+    height: 160px;
+    margin: 5px 0 0;
+    opacity: 0.7;
+    position: relative;
+    width: 35%;
+}
 #repositories li li {
     background: #cccccc;
+    float: left;
     font-size: 90%;
     height: auto;
+    list-style: none;
     margin: 0;
     text-align: center;
     width: 33.33%;
@@ -231,79 +312,25 @@ ul {
     display: block;
 }
 #repositories li ul {
-    width: 100%;
+    float: left;
+    /*width: 60%;*/
 }
 #repositories p {
-    height: 100px;
-    padding: 30px 10%;
-}
-#repositories .boxes > li > a {
-    background-repeat: no-repeat;
-    background-position: 0 0;
-    background-size: 100% auto;
-}
-#repositories .preview-bluray-dvd-cd-book-collection > a {
-    background-image: url(../images/preview-bluray-dvd-cd-book-collection.png);
-}
-#repositories .preview-html-blank-template > a {
-    background-image: url(../images/preview-html-blank-template.png);
-}
-#repositories .preview-joomla-3-blank-template > a {
-    background-image: url(../images/preview-joomla-3-blank-template.png);
-}
-
-/* Classes */
-.boxes li {
-    float: left;
-    list-style: none;
-    margin: 0 0 5%;
-    position: relative;
-    width: 30%;
-}
-.boxes li.middle {
-    margin: 0 5% 5%;
-}
-.boxes li > a.image {
-    display: block;
-    height: 160px;
-    margin: 5px 0 0;
-    opacity: 0.7;
-    position: relative;
-}
-.boxes li > a.image:hover {
-    opacity: 1;
-}
-.boxes li > a.image:hover > p {
-    background: rgba(0, 0, 0, 0.9);
-    opacity: 1;
-}
-.boxes p {
     color: #ffffff;
     font-size: 110%;
-    height: 160px;
-    opacity: 0;
-    padding: 0 10%;
-    position: absolute;
-    text-align: center;
-    top: 0;
-    width: 80%;
-    z-index: 1;
+    float: left;
+    /*width: 60%;*/
 }
-.list li {
-    background: #bbbbbb;
+#repositories .boxes {
+    margin: 0 -2.5%;
+    overflow: hidden;
+}
+#repositories .boxes > li {    
+    float: left;
     list-style: none;
-    margin: 1% 0;
-}
-.list li:hover {
-    background: #ddd;
-}
-.list li > a {
-    color: #333333 !important;
-    display: block;
-    font-size: 120%;
-    padding: 1%;
-    text-decoration: none;
-    width: 98%;
+    margin: 0 2.5% 5%;
+    position: relative;
+    width: 45%;
 }
 
 /* Media-queries */
