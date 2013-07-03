@@ -289,6 +289,7 @@ ul {
     padding: 0 0 0 60px;
 }
 #repositories p {
+    clear: left;
     color: #eeeeee;
     float: left;
     line-height: 20px;
@@ -343,6 +344,7 @@ ul {
 }
 #repositories .preview-joomla-3-blank-template div {
     background-image: url(../images/preview-joomla-3-blank-template.png);
+    background-position: 0 1px;
 }
 
 /* Media-queries */
