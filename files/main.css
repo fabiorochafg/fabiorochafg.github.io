@@ -49,7 +49,7 @@ h1 a:hover {
 }
 h2 {
     font-size: 280%;
-    padding: 10px 0 40px;
+    padding: 10px 0 0;
 }
 h3 {
     font-size: 130%;
@@ -108,6 +108,7 @@ ul {
     background: #555555;
     display: table;
     font-size: 130%;
+    font-weight: normal;
     height: 30px;
     line-height: 30px;
     margin: 0 0 10px;
@@ -157,7 +158,7 @@ ul {
 #gists {
     background: #eeeeee;
     color: #666666;
-    padding: 4% 10% 9%;
+    padding: 4% 10% 7%;
 }
 #gists a {
     color: #777777;
@@ -191,31 +192,11 @@ ul {
     width: 96%;
 }
 
-
 /* Portfolio */
 #portfolio {
     background: #666666;
     color: #dddddd;
     padding: 4% 10%;
-}
-#portfolio a {
-    background-repeat: no-repeat;
-    background-position: 0 0;
-    background-size: 100% auto;
-    box-shadow: 0px 0px 5px #222222;
-    display: block;
-    height: 160px;
-    margin: 5px 0 0;
-    opacity: 0.7;
-    position: relative;
-}
-#portfolio a:hover {
-    opacity: 1;
-}
-#portfolio a:hover p {
-    background: rgba(255, 255, 255, 0.9);
-    color: #111111;
-    opacity: 1;
 }
 #portfolio li {
     float: left;
@@ -227,7 +208,26 @@ ul {
 #portfolio li.middle {
     margin: 0 5% 5%;
 }
-#portfolio p {
+#portfolio li a {
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    background-size: 100% auto;
+    box-shadow: 0px 0px 5px #222222;
+    display: block;
+    height: 160px;
+    margin: 5px 0 0;
+    opacity: 0.7;
+    position: relative;
+}
+#portfolio li a:hover {
+    opacity: 1;
+}
+#portfolio li a:hover p {
+    background: rgba(255, 255, 255, 0.9);
+    color: #111111;
+    opacity: 1;
+}
+#portfolio li p {
     color: #ffffff;
     font-size: 110%;
     height: 160px;
@@ -239,6 +239,9 @@ ul {
     top: 0;
     width: 80%;
     z-index: 2;
+}
+#portfolio > p {
+    margin: 0 0 40px;
 }
 #portfolio .portfolio-asifrn a {
     background-image: url(../images/portfolio-asifrn.png);
@@ -284,17 +287,26 @@ ul {
     padding: 0 2% 0 0;
     width: 60%;
 }
-#repositories h3 {
-    float: left;
-    padding: 0 0 0 60px;
-}
-#repositories p {
+#repositories div p {
     clear: left;
     color: #eeeeee;
     float: left;
     line-height: 20px;
     padding: 0 0 0 60px;
     text-align: justify;
+}
+#repositories h3 {
+    float: left;
+    padding: 0 0 0 60px;
+}
+#repositories > p {
+    margin: 0 0 50px;
+}
+#repositories > p a {
+    color: #222222;
+}
+#repositories > p a:hover {
+    color: #666666;
 }
 #repositories > ul {
     width: 100%;
