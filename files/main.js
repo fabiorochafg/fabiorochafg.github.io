@@ -5,6 +5,9 @@ $(document).ready(function() {
 	$(".preview-bluray-dvd-cd-book-collection .boxes li a").css("line-height", $(".preview-bluray-dvd-cd-book-collection > div").height()+"px");
 	$(".preview-html-blank-template .boxes li a").css("line-height", $(".preview-html-blank-template > div").height()+"px");
 	$(".preview-joomla-3-blank-template .boxes li a").css("line-height", $(".preview-joomla-3-blank-template > div").height()+"px");
+
+
+	$('#portfolio > ul > li').each( function() { $(this).hoverdir(); } );
 });
 
 /* Google Analyctis */

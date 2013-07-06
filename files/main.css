@@ -22,6 +22,7 @@ body {
 code {
     clear: left;
     display: block;
+    font-size: 95%;
     padding: 0 0 0 60px;
 }
 dd {
@@ -53,6 +54,7 @@ h2 {
 }
 h3 {
     font-size: 130%;
+    padding: 0 0 20px;
 }
 ul {
     line-height: 1.5em;
@@ -66,7 +68,7 @@ ul {
 .container {
     margin: 0 auto;
     overflow: hidden;
-    padding: 4% 10%;
+    padding: 4% 10% 6%;
     width: 80%;
 }
 
@@ -81,49 +83,18 @@ ul {
 }
 #header > div div {
     float: right;
-    margin: 18% 10% 0 0;
-    width: 50%;
+    padding: 20% 10% 0 0;
+    width: 45%;
 }
-#header a {
-    color: #aaaaaa;
-    text-decoration: none;
-}
-#header a:hover {
-    color: #dddddd;
-}
-#header dl {
-    list-style: none;
-    margin: 15px 0 0;
-}
-#header dt {
-    background: #000000;
+#header p {    
     color: #eeeeee;
-    font-size: 110%;
-    height: 30px;
-    line-height: 30px;
-    margin: 0 0 10px;
-    padding: 5px 15px;
+    font-size: 220%;
+    line-height: 42px;
+    text-align: right;
+    text-shadow: 1px 1px 1px #000000;
 }
-#header dd {
-    background: #555555;
-    display: table;
-    font-size: 130%;
-    font-weight: normal;
-    height: 30px;
-    line-height: 30px;
-    margin: 0 0 10px;
-    padding: 5px 15px;
-}
-#header dd:hover {
-    background: #444;
-}
-#header p {
-    color: #CCCCCC;
-    font-size: 160%;
-    padding: 30px 0 15px;
-}
-#header p a {
-    text-decoration: underline;
+#header p:nth-child(2) {
+    font-size: 140%;
 }
 
 /* Menu */
@@ -154,11 +125,200 @@ ul {
     color: #999999;
 }
 
+/* About */
+#about {
+    background: #111111;
+    background: rgba(17,17,17,1);
+    background: -moz-linear-gradient(top, rgba(17,17,17,1) 0%, rgba(34,34,34,1) 100%);
+    background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(17,17,17,1)), color-stop(100%, rgba(34,34,34,1)));
+    background: -webkit-linear-gradient(top, rgba(17,17,17,1) 0%, rgba(34,34,34,1) 100%);
+    background: -o-linear-gradient(top, rgba(17,17,17,1) 0%, rgba(34,34,34,1) 100%);
+    background: -ms-linear-gradient(top, rgba(17,17,17,1) 0%, rgba(34,34,34,1) 100%);
+    background: linear-gradient(to bottom, rgba(17,17,17,1) 0%, rgba(34,34,34,1) 100%);
+    color: #888888;
+}
+#about > div.left {
+    float: left;
+    width: 42.5%;
+}
+#about > div.left li {
+    background: #000000;
+    color: #eeeeee;
+    display: block;
+    font-size: 110%;
+    height: 30px;
+    line-height: 30px;
+    list-style: none;
+    margin: 0 0 10px;
+    padding: 5px 15px;
+}
+#about > div.left li:hover {
+    background: #333333;
+}
+#about > div.left ul {
+    float: left;
+}
+#about > div.right {
+    float: right;
+    width: 52.5%;
+}
+#about > div.right h3 {
+    text-align: right;
+}
+#about > div.right li {
+    background: #000;
+    float: right;
+    font-size: 95%;
+    list-style: none;
+    margin: 0 0 5px 5px;
+    padding: 3px 6px;
+}
+#about > div.right p {
+    float: right;
+    font-size: 160%;
+    padding: 0 0 5px;
+    text-align: right;
+}
+#about > div.right p:nth-child(2) {
+    font-size: 145%;
+    width: 90%;
+}
+#about > div.right p:nth-child(3) {
+    font-size: 130%;
+    width: 80%;
+}
+#about > div.right p:nth-child(4) {
+    font-size: 115%;
+    width: 70%;
+}
+#about > div.right p:nth-child(5) {
+    font-size: 100%;
+    width: 60%;
+}
+#about > div.right p a {
+    text-decoration: underline;
+}
+#about a {
+    color: #aaaaaa;
+    text-decoration: none;
+}
+#about a:hover {
+    color: #dddddd;
+}
+#about dl {
+    float: left;
+    list-style: none;
+    width: 100%;
+}
+#about dt {
+    background: #000000;
+    color: #eeeeee;
+    font-size: 105%;
+    height: 30px;
+    line-height: 30px;
+    margin: 0 0 10px;
+    padding: 5px 15px;
+}
+#about dd {
+    background: #555555;
+    display: table;
+    font-size: 130%;
+    font-weight: normal;
+    height: 30px;
+    line-height: 30px;
+    margin: 0 0 10px;
+    padding: 5px 15px;
+}
+#about dd:hover {
+    background: #444;
+}
+#about h3 {
+    display: inline-block;
+    margin: 7% 0 0;
+    width: 100%;
+}
+#about > p {
+    display: inline-block;
+    padding: 9% 0 0;
+    text-align: center;
+    width: 100%;
+}
+#about .percent dd {
+    padding: 5px 2%;
+    text-align: right;
+    text-shadow: 1px 1px 1px #222222;
+}
+#about .percent dt {
+    padding: 5px 1%;
+    text-align: center;
+    width: 20%;
+}
+#about .percent10 {
+    width: 7.4%;
+}
+#about .percent20 {
+    width: 14.8%;
+}
+#about .percent30 {
+    width: 22.2%;
+}
+#about .percent40 {
+    width: 29.6%;
+}
+#about .percent50 {
+    width: 37%;
+}
+#about .percent60 {
+    width: 44.4%;
+}
+#about .percent70 {
+    width: 51.8%;
+}
+#about .percent80 {
+    width: 59.2%;
+}
+#about .percent90 {
+    width: 66.6%;
+}
+#about .percent100 {
+    width: 74%;
+}
+#bio-photo {
+    background: url(../images/bio.jpg) no-repeat 0 0;
+    background: url(../images/bio.jpg) no-repeat 0 0 / 100% 100%;
+    border: 1px solid #000000;
+    float: left;
+    height: 138px;
+    margin: 0 10px 0 0;
+    width: 138px;
+}
+#bio-photo div {
+    background: rgba(0, 0, 0, 0.6);
+    height: 138px;
+}
+#bio-photo div:hover {
+    background: rgba(0, 0, 0, 0.3);
+}
+.hint--right:after {
+    margin-bottom: -20px !important;
+}
+.hint:after, [data-hint]:after {
+    font-size: 90% !important;
+    padding: 14px 10px !important;
+}
+
 /* Gists */
 #gists {
     background: #eeeeee;
+    background: rgba(238,238,238,1);
+    background: -moz-linear-gradient(top, rgba(238,238,238,1) 0%, rgba(255,255,255,1) 100%);
+    background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(238,238,238,1)), color-stop(100%, rgba(255,255,255,1)));
+    background: -webkit-linear-gradient(top, rgba(238,238,238,1) 0%, rgba(255,255,255,1) 100%);
+    background: -o-linear-gradient(top, rgba(238,238,238,1) 0%, rgba(255,255,255,1) 100%);
+    background: -ms-linear-gradient(top, rgba(238,238,238,1) 0%, rgba(255,255,255,1) 100%);
+    background: linear-gradient(to bottom, rgba(238,238,238,1) 0%, rgba(255,255,255,1) 100%);
     color: #666666;
-    padding: 4% 10% 7%;
+    padding: 4% 10% 9%;
 }
 #gists a {
     color: #777777;
@@ -168,7 +328,7 @@ ul {
     overflow: hidden;
 }
 #gists .gists li {
-    background: #bbbbbb;
+    background: #cccccc;
     float: left;
     list-style: none;
     margin: 0.5%;
@@ -195,6 +355,13 @@ ul {
 /* Portfolio */
 #portfolio {
     background: #666666;
+    background: rgba(102,102,102,1);
+    background: -moz-linear-gradient(top, rgba(102,102,102,1) 0%, rgba(119,119,119,1) 100%);
+    background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(102,102,102,1)), color-stop(100%, rgba(119,119,119,1)));
+    background: -webkit-linear-gradient(top, rgba(102,102,102,1) 0%, rgba(119,119,119,1) 100%);
+    background: -o-linear-gradient(top, rgba(102,102,102,1) 0%, rgba(119,119,119,1) 100%);
+    background: -ms-linear-gradient(top, rgba(102,102,102,1) 0%, rgba(119,119,119,1) 100%);
+    background: linear-gradient(to bottom, rgba(102,102,102,1) 0%, rgba(119,119,119,1) 100%);
     color: #dddddd;
     padding: 4% 10%;
 }
@@ -215,19 +382,18 @@ ul {
     box-shadow: 0px 0px 5px #222222;
     display: block;
     height: 160px;
-    margin: 5px 0 0;
     opacity: 0.7;
     position: relative;
 }
 #portfolio li a:hover {
     opacity: 1;
 }
-#portfolio li a:hover p {
+#portfolio li a:hover div {
     background: rgba(255, 255, 255, 0.9);
     color: #111111;
     opacity: 1;
 }
-#portfolio li p {
+#portfolio li div {
     color: #ffffff;
     font-size: 110%;
     height: 160px;
@@ -238,7 +404,7 @@ ul {
     text-align: center;
     top: 0;
     width: 80%;
-    z-index: 2;
+    z-index: 0;
 }
 #portfolio > p {
     margin: 0 0 40px;
@@ -274,14 +440,20 @@ ul {
 /* Repositories */
 #repositories {
     background: #aaaaaa;
-    color: #444444;
+    background: rgba(170,170,170,1);
+    background: -moz-linear-gradient(top, rgba(170,170,170,1) 0%, rgba(187,187,187,1) 100%);
+    background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(170,170,170,1)), color-stop(100%, rgba(187,187,187,1)));
+    background: -webkit-linear-gradient(top, rgba(170,170,170,1) 0%, rgba(187,187,187,1) 100%);
+    background: -o-linear-gradient(top, rgba(170,170,170,1) 0%, rgba(187,187,187,1) 100%);
+    background: -ms-linear-gradient(top, rgba(170,170,170,1) 0%, rgba(187,187,187,1) 100%);
+    background: linear-gradient(to bottom, rgba(170,170,170,1) 0%, rgba(187,187,187,1) 100%);
+    color: #333333;
     padding: 4% 10%;
 }
 #repositories div {
     background-repeat: no-repeat;
     background-position: 0 5px;
     background-size: 45px auto;
-    border-right: 1px solid #444444;
     float: left;
     overflow: hidden;
     padding: 0 2% 0 0;
@@ -289,7 +461,7 @@ ul {
 }
 #repositories div p {
     clear: left;
-    color: #eeeeee;
+    color: #555555;
     float: left;
     line-height: 20px;
     padding: 0 0 0 60px;
@@ -335,6 +507,7 @@ ul {
     background: #cccccc;
 }
 #repositories .boxes li a {
+    border-left: 1px solid #444444;
     color: #444444;
     display: block;
     line-height: 16px;
@@ -343,10 +516,6 @@ ul {
 }
 #repositories .boxes li a:hover {
     color: #111111;
-}
-#repositories .boxes li strong {
-    /*clear: both;
-    display: block;*/
 }
 #repositories .preview-bluray-dvd-cd-book-collection div {
     background-image: url(../images/preview-bluray-dvd-cd-book-collection.png);

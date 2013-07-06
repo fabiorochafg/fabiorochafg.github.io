@@ -6,9 +6,11 @@
 <meta content="HTML Blank Template" name="description" />
 <link href="favicon.ico" type="image/x-icon" rel="shortcut icon" />
 <link href="http://fonts.googleapis.com/css?family=Titillium+Web:400,600,700" rel="stylesheet" type="text/css" />
-<link rel="stylesheet" href="files/base.css" type="text/css" />
 <link rel="stylesheet" href="files/main.css" type="text/css" />
+<link rel="stylesheet" href="files/hint.min.css" type="text/css" />
 <script src="files/jquery.js" type="text/javascript"></script>
+<script src="files/modernizr.custom.97074.js" type="text/javascript"></script>
+<script src="files/jquery.hoverdir.js" type="text/javascript"></script>
 <script src="files/main.js" type="text/javascript"></script>
 </head>
 
@@ -20,23 +22,73 @@
                 <a href="http://fabiorochafg.github.io" title="Fábio Rocha">Fábio Rocha</a>
             </h1>
             <div>
-                <p>Sou <strong>Fábio Rocha</strong>, um <strong>Desenvolvedor Web</strong> de Natal/RN, Brasil.</p>
-                <dl>
-                    <dt>E-mail</dt><dd><a href="mailto:fabiorochafg@gmail.com">fabiorochafg@gmail.com</a></dd>
-                    <dt>Telefone</dt><dd><a href="tel:96217000">(84) 9621-7000</a></dd>
-                    <dt>Linkedin</dt><dd><a href="http://www.linkedin.com/in/fabiorochafg">br.linkedin.com/in/fabiorochafg</a></dd>
-                </dl>
+                <p>Olá, eu sou <strong>Fábio Rocha</strong> e eu desenvolvo <strong>Sites</strong> em Natal, Brasil.</p>
+                <p>Conheça os meus projetos através do <a href="http://behance.net/fabiorochafg">Behance</a>.</p>
             </div>
         </div>
     </div>
 
     <div id="menu" class="container">
         <ul>
-            <li><a href="#header">Contato</a></li>
+            <li><a href="#about">Sobre</a></li>
             <li><a href="#portfolio">Portfólio</a></li>
             <li><a href="#repositories">Repositórios</a></li>
             <li><a href="#gists">Gists</a></li>
         </ul>
+    </div>
+
+    <div id="about" class="container">
+        <h2>Sobre</h2>
+        <div class="left">
+            <h3>Contato</h3>
+            <div id="bio-photo">
+                <div></div>
+            </div>
+            <ul>
+                <li class="hint--right" data-hint="fabiorochafg@gmail.com">
+                    <a href="mailto:fabiorochafg@gmail.com">E-mail</a>
+                </li>
+                <li class="hint--right" data-hint="(84) 9621-7000">
+                    <a href="tel:96217000">Telefone</a>
+                </li>
+                <li class="hint--right" data-hint="www.linkedin.com/in/fabiorochafg">
+                    <a href="http://www.linkedin.com/in/fabiorochafg">Linkedin</a>
+                </li>
+            </ul>
+        </div>
+        <div class="right">
+            <h3>Bio</h3>
+            <p>Sou <strong>Web Designer</strong> e <strong>Desenvolvedor Web</strong> profissionalmente desde 2005.</p>
+            <p>Atualmente trabalho no <a href="http://portal.ifrn.edu.br">IFRN</a>, onde sou responsável por alguns serviços web, como o portal. E atuo também como <strong>freelancer</strong>.</p>
+            <p>Tenho experiência em mais de <strong>60 projetos</strong>, sendo boa parte em sites e sistemas institucionais para o <a href="http://portal.mec.gov.br">MEC</a> e o IFRN, atuando tanto com programação e design, quanto com consultoria.</p>
+            <p>Meu estilo de desenvolvimento é manter uma estrutura lógica e eficiente dos códigos, sempre de acordo com os padrões web, para o melhor resultado em tela para o usuário.</p>
+            <h3>Serviços</h3>
+            <ul>
+                <li>Interfaces bonitas, modernas e limpas</li>
+                <li>Foco na usabilidade</li>
+                <li>Marcação HTML e CSS eficiente</li>
+                <li>Desenvolvimento Front-End</li>
+                <li>Desenvolvimento Back-End</li>
+                <li>Integração com Gerenciadores de Conteúdo</li>
+                <li>Identidade Visual</li>
+                <li>Web Design Responsivo</li>
+                <li>Acessibilidade Web</li>
+            </ul>            
+        </div>        
+        <div class="left">
+            <h3>Habilidades Técnicas</h3>
+            <dl class="percent">
+                <dt>CSS</dt><dd class="percent90 hint--right" data-hint="Expert">90%</dd>
+                <dt>XHTML</dt><dd class="percent90 hint--right" data-hint="Expert">90%</dd>
+                <dt>JavaScript</dt><dd class="percent70 hint--right" data-hint="Muita experiência">70%</dd>
+                <dt>jQuery</dt><dd class="percent70 hint--right" data-hint="Muita experiência">70%</dd>
+                <dt>PHP</dt><dd class="percent50 hint--right" data-hint="Experiente">50%</dd>
+                <dt>Joomla</dt><dd class="percent80 hint--right" data-hint="Muita experiência">80%</dd>
+                <dt>Plone</dt><dd class="percent40 hint--right" data-hint="Experiência média">40%</dd>
+                <dt>Django</dt><dd class="percent20 hint--right" data-hint="Pouca experiência">20%</dd>
+            </dl>
+        </div>
+        <p>Este site foi <strong>hand coded</strong> com <a href="http://validator.w3.org/check?uri=fabiorochafg.github.io&charset=%28detect+automatically%29&doctype=Inline&group=0">HTML</a> e <a href="http://jigsaw.w3.org/css-validator/validator?uri=fabiorochafg.github.io&profile=css3&usermedium=all&warning=1&vextwarning=&lang=pt-BR">CSS</a> válidos.</p>
     </div>
 
     <div id="portfolio" class="container">
@@ -44,42 +96,48 @@
         <p>Conheça todos os projetos em <a href="http://www.behance.net/fabiorochafg">behance.net/fabiorochafg</a>.</p>
         <ul>
             <li class="portfolio-foco-tgma">
-                <a href="http://focotgma.com"><p>Foco TGMA</p></a>
+                <a href="http://focotgma.com">
+                    <div>Foco TGMA</div>                    
+                </a>
             </li>
             <li class="middle portfolio-soluti">
-                <a href="http://solutirn.com.br"><p>Soluti</p></a>
+                <a href="http://solutirn.com.br">
+                    <div>Soluti</div>
+                </a>
             </li>
             <li class="portfolio-hatha-contabilidade">
-                <a href="http://hathacontabilidade.com.br"><p>Hatha Contabilidade</p></a>
+                <a href="http://hathacontabilidade.com.br">
+                    <div>Hatha Contabilidade</div>
+                </a>
             </li>
             <li class="portfolio-flusser">
                 <a href="http://flusser.com.br">
-                    <p>Cultura Midiática</p>
+                    <div>Cultura Midiática</div>
                 </a>
             </li>
             <li class="middle portfolio-niklason">
                 <a href="http://www.niklason.com">
-                    <p>Niklason Residences</p>
+                    <div>Niklason Residences</div>
                 </a>
             </li>
             <li class="portfolio-esmarn">
                 <a href="http://www.esmarn.tjrn.jus.br">
-                    <p>ESMARN</p>
+                    <div>ESMARN</div>
                 </a>
             </li>
             <li class="portfolio-asifrn">
                 <a href="http://www.asifrn.org.br">
-                    <p>ASIFRN</p>
+                    <div>ASIFRN</div>
                 </a>
             </li>            
             <li class="middle portfolio-ifb">
                 <a href="http://ifb.edu.br">
-                    <p>IFB</p>
+                    <div>IFB</div>
                 </a>
             </li>
             <li class="portfolio-lader">
                 <a href="http://lader.eng.br">
-                    <p>Lader</p>
+                    <div>Lader</div>
                 </a>
             </li>
         </ul>
