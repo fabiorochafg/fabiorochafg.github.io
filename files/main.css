@@ -221,7 +221,7 @@ ul {
 }
 #about dd {
     background: #555555;
-    display: table;
+    float: left;
     font-size: 130%;
     font-weight: normal;
     height: 30px;
@@ -233,8 +233,10 @@ ul {
     background: #444;
 }
 #about h3 {
+    color: #aaa;
     display: inline-block;
     margin: 7% 0 0;
+    text-shadow: 1px 1px 1px #111111;
     width: 100%;
 }
 #about > p {
@@ -284,8 +286,10 @@ ul {
     width: 74%;
 }
 #bio-photo {
-    background: url(../images/bio.jpg) no-repeat 0 0;
-    background: url(../images/bio.jpg) no-repeat 0 0 / 100% 100%;
+    background-image: url(../images/bio.jpg);
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    background-size: 138px 138px;
     border: 1px solid #000000;
     float: left;
     height: 138px;
