@@ -76,7 +76,6 @@ ul {
     overflow: hidden;
 }
 .box > div {
-    background: #ccc;
     float: left;
     margin: 2%;
     width: 96%;
@@ -154,14 +153,14 @@ ul {
 
 /* About */
 #about {
-    background: #111111;
-    background: rgba(17,17,17,1);
-    background: -moz-linear-gradient(top, rgba(17,17,17,1) 0%, rgba(34,34,34,1) 100%);
-    background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(17,17,17,1)), color-stop(100%, rgba(34,34,34,1)));
-    background: -webkit-linear-gradient(top, rgba(17,17,17,1) 0%, rgba(34,34,34,1) 100%);
-    background: -o-linear-gradient(top, rgba(17,17,17,1) 0%, rgba(34,34,34,1) 100%);
-    background: -ms-linear-gradient(top, rgba(17,17,17,1) 0%, rgba(34,34,34,1) 100%);
-    background: linear-gradient(to bottom, rgba(17,17,17,1) 0%, rgba(34,34,34,1) 100%);
+    background: #222222;
+    background: rgba(34,34,34,1);
+    background: -moz-linear-gradient(top, rgba(34,34,34,1) 0%, rgba(51,51,51,1) 100%);
+    background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(34,34,34,1)), color-stop(100%, rgba(51,51,51,1)));
+    background: -webkit-linear-gradient(top, rgba(34,34,34,1) 0%, rgba(51,51,51,1) 100%);
+    background: -o-linear-gradient(top, rgba(34,34,34,1) 0%, rgba(51,51,51,1) 100%);
+    background: -ms-linear-gradient(top, rgba(34,34,34,1) 0%, rgba(51,51,51,1) 100%);
+    background: linear-gradient(to bottom, rgba(34,34,34,1) 0%, rgba(51,51,51,1) 100%);
     color: #999999;
 }
 #about > div.left {
@@ -271,6 +270,24 @@ ul {
     padding: 9% 0 0;
     text-align: center;
     width: 100%;
+}
+#about .contact {
+    float: left;
+    width: auto;
+}
+#about .contact dd {
+    background: none;
+    font-size: 115%;
+    padding: 5px 0;
+    text-shadow: 1px 1px 1px #222222;
+    width: 75%;
+}
+#about .contact dt {
+    background: none;
+    font-size: 95%;
+    padding: 5px 0;
+    text-align: left;
+    width: 25%;
 }
 #about .percent dd {
     padding: 5px 2%;
@@ -397,67 +414,78 @@ ul {
     padding: 4% 10%;
 }
 #portfolio .box > div {
-    position: relative;
-}
-#portfolio .box > div a {
     background-repeat: no-repeat;
     background-position: 0 0;
     background-size: 100% auto;
     box-shadow: 0px 0px 5px #222222;
-    display: block;
     height: 160px;
     opacity: 0.7;
     position: relative;
 }
-#portfolio .box > div a:hover {
-    opacity: 1;
+#portfolio .box > div div {
+    display: block;
+    height: 96px;
+    opacity: 0;
+    padding: 32px 0;
+    position: absolute;
+    text-align: center;
+    top: 0;
+    width: 100%;
+    z-index: 0;
 }
-#portfolio .box > div a:hover div {
+#portfolio .box > div div:hover {
     background: rgba(255, 255, 255, 0.9);
     color: #111111;
     opacity: 1;
 }
-#portfolio .box > div div {
-    color: #ffffff;
-    font-size: 110%;
-    height: 160px;
-    line-height: 160px; 
-    opacity: 0;
-    padding: 0 10%;
-    position: absolute;
-    text-align: center;
-    top: 0;
+#portfolio .box > div a,
+#portfolio .box > div h3 {
+    border-bottom: 1px solid #444444;
+    display: inline-block;
+    height: 30px;
+    line-height: 30px;
+    margin: 0 10%;
     width: 80%;
-    z-index: 0;
+}
+#portfolio .box > div a {
+    color: #333333;
+    font-size: 90%;
+    text-decoration: none;
+}
+#portfolio .box > div a:hover {
+    background: #ccc;
+}
+#portfolio .box > div h3 {
+    padding: 0 0 5px;
 }
 #portfolio > p {
     margin: 0 0 40px;
 }
-#portfolio .portfolio-asifrn a {
+#portfolio .portfolio-asifrn {
     background-image: url(../images/portfolio-asifrn.png);
 }
-#portfolio .portfolio-esmarn a {
+#portfolio .portfolio-esmarn {
     background-image: url(../images/portfolio-esmarn.png);
 }
-#portfolio .portfolio-flusser a {
+#portfolio .portfolio-flusser {
     background-image: url(../images/portfolio-flusser.png);
 }
-#portfolio .portfolio-foco-tgma a {
+#portfolio .portfolio-foco-tgma {
     background-image: url(../images/portfolio-foco-tgma.png);
 }
-#portfolio .portfolio-hatha-contabilidade a {
+#portfolio .portfolio-hatha-contabilidade {
     background-image: url(../images/portfolio-hatha-contabilidade.png);
 }
-#portfolio .portfolio-ifb a {
+#portfolio .portfolio-ifb {
     background-image: url(../images/portfolio-ifb.png);
 }
-#portfolio .portfolio-lader a {
+#portfolio .portfolio-lader {
     background-image: url(../images/portfolio-lader.png);
 }
-#portfolio .portfolio-niklason a {
+#portfolio .portfolio-niklason {
     background-image: url(../images/portfolio-niklason.png);
 }
-#portfolio .portfolio-soluti a {
+#portfolio .portfolio-soluti {
     background-image: url(../images/portfolio-soluti.png);
 }
 
@@ -474,25 +502,23 @@ ul {
     color: #333333;
     padding: 4% 10%;
 }
-#repositories div {
+#repositories .box > div div {
     background-repeat: no-repeat;
     background-position: 0 5px;
     background-size: 45px auto;
-    float: left;
     overflow: hidden;
-    padding: 0 2% 0 0;
-    width: 60%;
 }
-#repositories div p {
+#repositories .box > div div p {
     clear: left;
     color: #555555;
     float: left;
     line-height: 20px;
-    padding: 0 0 0 60px;
+    padding: 3px 0 8px 60px;
     text-align: justify;
 }
 #repositories h3 {
     float: left;
+    line-height: 24px;
     padding: 0 0 0 60px;
 }
 #repositories > p {
@@ -515,26 +541,26 @@ ul {
     width: 100%;
 }
 #repositories .boxes {
-    float: right;
-    width: 37%;
+    border-bottom: 1px solid #444444;
+    overflow: hidden;
+    margin: 10px 0 0 60px;
 }
 #repositories .boxes li {
     float: left;
     font-size: 90%;
-    height: auto;
     list-style: none;
     margin: 0;
-    text-align: center;
-    width: 50%;
+    text-align: right;
+    width: 100%;
 }
 #repositories .boxes li:hover {
     background: #cccccc;
 }
 #repositories .boxes li a {
-    border-left: 1px solid #444444;
+    border-top: 1px solid #444444;
     color: #444444;
     display: block;
-    line-height: 16px;
+    line-height: 28px;
     text-align: center;
     text-decoration: none;
 }
