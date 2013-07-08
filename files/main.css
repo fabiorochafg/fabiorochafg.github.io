@@ -49,7 +49,7 @@ h1 a:hover {
     opacity: 0.5;
 }
 h2 {
-    font-size: 280%;
+    font-size: 300%;
     padding: 10px 0 0;
 }
 h3 {
@@ -71,6 +71,34 @@ ul {
     padding: 4% 10% 6%;
     width: 80%;
 }
+.box {
+    margin: 0 -2%;
+    overflow: hidden;
+}
+.box > div {
+    background: #ccc;
+    float: left;
+    margin: 2%;
+    width: 96%;
+}
+.box .box12 {
+    width: 96%;
+}
+.box .box6 {
+    width: 46%;
+}
+.box .box4 {
+    width: 29.3333%;
+}
+.box .box3 {
+    width: 21%;
+}
+.box .box2 {
+    width: 12.6666%;
+}
+.box .box1 {
+    width: 4.3333%;
+}
 
 /* Header */
 #header {
@@ -79,7 +107,7 @@ ul {
     position: relative;
 }
 #header > div {
-    background: rgba(0, 0, 0, 0.8);
+    background: rgba(0, 0, 0, 0.7);
 }
 #header > div div {
     float: right;
@@ -100,7 +128,6 @@ ul {
 /* Menu */
 #menu {
     background: #000000;
-    border-top: 1px solid #333333;
     bottom: 0;
     padding: 0 10%;
     position: fixed;
@@ -135,7 +162,7 @@ ul {
     background: -o-linear-gradient(top, rgba(17,17,17,1) 0%, rgba(34,34,34,1) 100%);
     background: -ms-linear-gradient(top, rgba(17,17,17,1) 0%, rgba(34,34,34,1) 100%);
     background: linear-gradient(to bottom, rgba(17,17,17,1) 0%, rgba(34,34,34,1) 100%);
-    color: #888888;
+    color: #999999;
 }
 #about > div.left {
     float: left;
@@ -297,7 +324,7 @@ ul {
     width: 138px;
 }
 #bio-photo div {
-    background: rgba(0, 0, 0, 0.6);
+    background: rgba(0, 0, 0, 0.4);
     height: 138px;
 }
 #bio-photo div:hover {
@@ -369,17 +396,10 @@ ul {
     color: #dddddd;
     padding: 4% 10%;
 }
-#portfolio li {
-    float: left;
-    list-style: none;
-    margin: 0 0 5%;
+#portfolio .box > div {
     position: relative;
-    width: 30%;
 }
-#portfolio li.middle {
-    margin: 0 5% 5%;
-}
-#portfolio li a {
+#portfolio .box > div a {
     background-repeat: no-repeat;
     background-position: 0 0;
     background-size: 100% auto;
@@ -389,15 +409,15 @@ ul {
     opacity: 0.7;
     position: relative;
 }
-#portfolio li a:hover {
+#portfolio .box > div a:hover {
     opacity: 1;
 }
-#portfolio li a:hover div {
+#portfolio .box > div a:hover div {
     background: rgba(255, 255, 255, 0.9);
     color: #111111;
     opacity: 1;
 }
-#portfolio li div {
+#portfolio .box > div div {
     color: #ffffff;
     font-size: 110%;
     height: 160px;

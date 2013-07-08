@@ -7,7 +7,20 @@ $(document).ready(function() {
 	$(".preview-joomla-3-blank-template .boxes li a").css("line-height", $(".preview-joomla-3-blank-template > div").height()+"px");
 
 
-	$('#portfolio > ul > li').each( function() { $(this).hoverdir(); } );
+	/* Menu */
+	$('#menu a').on('click',function (e) {
+	    e.preventDefault();
+	    var target = this.hash,
+	    $target = $(target);
+	    $('html, body').stop().animate({
+	        'scrollTop': $target.offset().top
+	    }, 900, 'swing', function () {
+	        window.location.hash = target;
+	    });
+	});
+
+	/* Portfolio */
+	$('#portfolio .box > div').each( function() { $(this).hoverdir(); } );
 });
 
 /* Google Analyctis */
