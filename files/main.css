@@ -229,7 +229,7 @@ ul {
     text-decoration: none;
 }
 #about a:hover {
-    color: #dddddd;
+    color: #ffffff;
 }
 #about dl {
     float: left;
@@ -280,14 +280,26 @@ ul {
     font-size: 115%;
     padding: 5px 0;
     text-shadow: 1px 1px 1px #222222;
-    width: 75%;
 }
 #about .contact dt {
-    background: none;
-    font-size: 95%;
-    padding: 5px 0;
-    text-align: left;
-    width: 25%;
+    display: block;
+    height: 40px;
+    margin: 0 12px 0 7px;
+    padding: 0;
+    text-indent: -9000px;
+    width: 23px;
+}
+#about .contact .email {
+    background: url(../images/contact-email.png) no-repeat center center;
+    background: url(../images/contact-email.png) no-repeat center center / 100% auto;
+}
+#about .contact .linkedin {
+    background: url(../images/contact-linkedin.png) no-repeat center center;
+    background: url(../images/contact-linkedin.png) no-repeat center center / 100% auto;
+}
+#about .contact .telefone {
+    background: url(../images/contact-telefone.png) no-repeat center center;
+    background: url(../images/contact-telefone.png) no-repeat center center / 100% auto;
 }
 #about .percent dd {
     padding: 5px 2%;
@@ -581,7 +593,7 @@ ul {
 /* Media-queries */
 @media only screen and (max-device-width: 480px), only screen and (min-device-width: 481px) and (max-device-width: 991px) and (orientation:portrait), only screen and (min-device-width: 481px) and (max-device-width: 991px) and (orientation:landscape) {
     body {
-        font-size: 220%;
+        font-size: 120%;
     }
     #header {
         background: #555555;
