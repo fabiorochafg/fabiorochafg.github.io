@@ -161,7 +161,7 @@ ul {
     background: -o-linear-gradient(top, rgba(34,34,34,1) 0%, rgba(51,51,51,1) 100%);
     background: -ms-linear-gradient(top, rgba(34,34,34,1) 0%, rgba(51,51,51,1) 100%);
     background: linear-gradient(to bottom, rgba(34,34,34,1) 0%, rgba(51,51,51,1) 100%);
-    color: #999999;
+    color: #bbbbbb;
 }
 #about > div.left {
     float: left;
@@ -608,6 +608,8 @@ ul {
     }
     #menu li a {
         font-size: 120%;
+        height: 80px;
+        line-height: 80px;
     }
     #repositories {
         padding: 4% 10% 12%;
