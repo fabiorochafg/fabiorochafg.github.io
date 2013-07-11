@@ -101,8 +101,11 @@ ul {
 
 /* Header */
 #header {
-    background: url("../images/bg.jpg") no-repeat center 0 #111;
-    background: url("../images/bg.jpg") no-repeat center 0 / 100% auto #111;
+    background-color: #111111;
+    background-image: url(../images/bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center 0;
+    background-size: 100% auto;
     position: relative;
 }
 #header > div {
@@ -290,16 +293,22 @@ ul {
     width: 23px;
 }
 #about .contact .email {
-    background: url(../images/contact-email.png) no-repeat center center;
-    background: url(../images/contact-email.png) no-repeat center center / 100% auto;
+    background-image: url(../images/contact-email.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 100% auto;
 }
 #about .contact .linkedin {
-    background: url(../images/contact-linkedin.png) no-repeat center center;
-    background: url(../images/contact-linkedin.png) no-repeat center center / 100% auto;
+    background-image: url(../images/contact-linkedin.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 100% auto;
 }
 #about .contact .telefone {
-    background: url(../images/contact-telefone.png) no-repeat center center;
-    background: url(../images/contact-telefone.png) no-repeat center center / 100% auto;
+    background-image: url(../images/contact-telefone.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 100% auto;
 }
 #about .percent dd {
     padding: 5px 2%;
