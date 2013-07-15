@@ -106,7 +106,7 @@ ul {
     background-repeat: no-repeat;
     background-position: center 0;
     background-size: 100% auto;
-    position: relative;
+    /*position: relative;*/
 }
 #header > div {
     background: rgba(0, 0, 0, 0.7);
@@ -133,10 +133,14 @@ ul {
 #menu {
     background: #000000;
     bottom: 0;
+    height: 50px;
     padding: 0 10%;
     position: fixed;
     z-index: 1;
 }
+    #menu.menufixo {
+        top: 0 !important;
+    }
 #menu li {
     list-style: none;
 }
@@ -152,8 +156,18 @@ ul {
     text-decoration: none;
     text-shadow: 1px 1px 1px #000000;
 }
-#menu li a:hover {
+#menu li a:hover,
+#menu li a.active {
     color: #999999;
+}
+#menu li.language {
+    float: right;
+}
+#menu li.language a {
+    color: #aaaaaa;
+    font-size: 85%;
+    font-weight: normal;
+    padding: 0;
 }
 
 /* About */
@@ -384,7 +398,7 @@ ul {
     background: -ms-linear-gradient(top, rgba(238,238,238,1) 0%, rgba(255,255,255,1) 100%);
     background: linear-gradient(to bottom, rgba(238,238,238,1) 0%, rgba(255,255,255,1) 100%);
     color: #666666;
-    padding: 4% 10% 9%;
+    padding: 4% 10% 5%;
 }
 #gists a {
     color: #777777;
@@ -474,7 +488,8 @@ ul {
     background: #ccc;
 }
 #portfolio .box > div h3 {
-    padding: 0 0 5px;
+    font-size: 120%;
+    padding: 0;
 }
 #portfolio > p {
     margin: 0 0 40px;
@@ -540,7 +555,7 @@ ul {
     padding: 0 0 0 60px;
 }
 #repositories > p {
-    margin: 0 0 50px;
+    margin: 0 0 40px;
 }
 #repositories > p a {
     color: #222222;

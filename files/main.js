@@ -4,7 +4,9 @@ $(document).ready(function() {
 	$("#header, #header > div").css("height", $(window).height());
 
 	/* Menu */
-	$('#menu a').on('click',function (e) {
+	$('#menu li:not(.language) a').on('click',function (e) {
+		$("#menu a").removeClass("active");
+		$(this).toggleClass("active");
 	    e.preventDefault();
 	    var target = this.hash,
 	    $target = $(target);
@@ -14,6 +16,17 @@ $(document).ready(function() {
 	        window.location.hash = target;
 	    });
 	});
+	$(window).scroll(function() {
+		if ($(this).scrollTop() == 0) {
+			$("#menu a").removeClass("active");
+		}
+        if ($(this).scrollTop() <= $(window).height()-50) {
+        	$("#menu").removeClass("menufixo");
+            $("#menu").css("bottom", $(this).scrollTop());
+        } else {
+            $("#menu").addClass("menufixo");
+        }
+    });
 });
 
 /* Google Analyctis */
