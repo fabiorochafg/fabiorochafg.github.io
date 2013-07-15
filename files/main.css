@@ -125,6 +125,8 @@ ul {
 }
 #header p:nth-child(2) {
     font-size: 140%;
+    line-height: 26px;
+    padding: 5px 0 0;
 }
 
 /* Menu */
@@ -285,6 +287,10 @@ ul {
     text-shadow: 1px 1px 1px #222222;
 }
 #about .contact dt {
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 100% auto;
     display: block;
     height: 40px;
     margin: 0 12px 0 7px;
@@ -294,21 +300,12 @@ ul {
 }
 #about .contact .email {
     background-image: url(../images/contact-email.png);
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: 100% auto;
 }
 #about .contact .linkedin {
     background-image: url(../images/contact-linkedin.png);
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: 100% auto;
 }
 #about .contact .telefone {
     background-image: url(../images/contact-telefone.png);
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: 100% auto;
 }
 #about .percent dd {
     padding: 5px 2%;
