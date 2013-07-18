@@ -449,16 +449,12 @@ ul {
     background-repeat: no-repeat;
     background-position: 0 0;
     background-size: 100% auto;
-    box-shadow: 0px 0px 5px #222222;
-    height: 160px;
     opacity: 0.7;
     position: relative;
 }
 #portfolio .box > div div {
     display: block;
-    height: 96px;
     opacity: 0;
-    padding: 32px 0;
     position: absolute;
     text-align: center;
     top: 0;
@@ -472,54 +468,39 @@ ul {
 }
 #portfolio .box > div a,
 #portfolio .box > div h3 {
-    border-bottom: 1px solid #444444;
+    border-bottom: 1px solid #666666;
     display: inline-block;
-    height: 30px;
-    line-height: 30px;
     margin: 0 10%;
     width: 80%;
 }
 #portfolio .box > div a {
     color: #333333;
     font-size: 90%;
+    font-weight: bold;
+    height: 30px;
+    line-height: 30px;
     text-decoration: none;
 }
 #portfolio .box > div a:hover {
     background: #ccc;
 }
+#portfolio .box > div a span {
+    font-weight: normal;
+}
 #portfolio .box > div h3 {
     font-size: 120%;
-    padding: 0;
+    line-height: 20px;
+    padding: 28px 0 10px;
+}
+#portfolio img {
+    box-shadow: 0px 0px 5px #222222;
+    width: 100%;
+}
+#portfolio li {
+    list-style: none;
 }
 #portfolio > p {
     margin: 0 0 40px;
-}
-#portfolio .portfolio-asifrn {
-    background-image: url(../images/portfolio-asifrn.png);
-}
-#portfolio .portfolio-esmarn {
-    background-image: url(../images/portfolio-esmarn.png);
-}
-#portfolio .portfolio-flusser {
-    background-image: url(../images/portfolio-flusser.png);
-}
-#portfolio .portfolio-foco-tgma {
-    background-image: url(../images/portfolio-foco-tgma.png);
-}
-#portfolio .portfolio-hatha-contabilidade {
-    background-image: url(../images/portfolio-hatha-contabilidade.png);
-}
-#portfolio .portfolio-ifb {
-    background-image: url(../images/portfolio-ifb.png);
-}
-#portfolio .portfolio-lader {
-    background-image: url(../images/portfolio-lader.png);
-}
-#portfolio .portfolio-niklason {
-    background-image: url(../images/portfolio-niklason.png);
-}
-#portfolio .portfolio-soluti {
-    background-image: url(../images/portfolio-soluti.png);
 }
 
 /* Repositories */
@@ -673,6 +654,9 @@ ul {
     }
 }
 @media screen and (max-width: 600px) {
+    #portfolio .box > div a span {
+        display: none;
+    }
     .boxes > li {
         width: 100%;
     }

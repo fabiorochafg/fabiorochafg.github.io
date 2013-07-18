@@ -27,6 +27,14 @@ $(document).ready(function() {
             $("#menu").addClass("menufixo");
         }
     });
+
+    /* Portfolio */
+	$('#portfolio .box').masonry({
+	  	itemSelector: '.box3'
+	});
+    $("#portfolio .box3").each(function(){
+    	$(this).find("div").css("height", $(this).find("img").height());
+    });
 });
 
 /* Google Analyctis */
