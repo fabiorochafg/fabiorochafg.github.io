@@ -101,12 +101,12 @@ ul {
 
 /* Header */
 #header {
+    background-attachment: fixed;
     background-color: #111111;
     background-image: url(../images/bg.jpg);
     background-repeat: no-repeat;
     background-position: center 0;
     background-size: 100% auto;
-    /*position: relative;*/
 }
 #header > div {
     background: rgba(0, 0, 0, 0.7);
@@ -505,16 +505,19 @@ ul {
 
 /* Repositories */
 #repositories {
-    background: #aaaaaa;
-    background: rgba(170,170,170,1);
-    background: -moz-linear-gradient(top, rgba(170,170,170,1) 0%, rgba(187,187,187,1) 100%);
-    background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(170,170,170,1)), color-stop(100%, rgba(187,187,187,1)));
-    background: -webkit-linear-gradient(top, rgba(170,170,170,1) 0%, rgba(187,187,187,1) 100%);
-    background: -o-linear-gradient(top, rgba(170,170,170,1) 0%, rgba(187,187,187,1) 100%);
-    background: -ms-linear-gradient(top, rgba(170,170,170,1) 0%, rgba(187,187,187,1) 100%);
-    background: linear-gradient(to bottom, rgba(170,170,170,1) 0%, rgba(187,187,187,1) 100%);
-    color: #333333;
-    padding: 4% 10%;
+    background-attachment: fixed;
+    background-color: #111111;
+    background-image: url(../images/bg-repositories.jpg);
+    background-repeat: no-repeat;
+    background-position: center 0;
+    background-size: 100% auto;
+    color: #bbbbbb;
+}
+#repositories a {
+    color: #dddddd;
+}
+#repositories > div {
+    background: rgba(0, 0, 0, 0.7);
 }
 #repositories .box > div div {
     background-repeat: no-repeat;
@@ -524,7 +527,7 @@ ul {
 }
 #repositories .box > div div p {
     clear: left;
-    color: #555555;
+    color: #888888;
     float: left;
     line-height: 20px;
     padding: 3px 0 8px 60px;
@@ -554,6 +557,9 @@ ul {
     position: relative;
     width: 100%;
 }
+#repositories .box {
+    margin: 3% -2% 0;
+}
 #repositories .boxes {
     border-bottom: 1px solid #444444;
     overflow: hidden;
@@ -572,7 +578,7 @@ ul {
 }
 #repositories .boxes li a {
     border-top: 1px solid #444444;
-    color: #444444;
+    color: #cccccc;
     display: block;
     line-height: 28px;
     text-align: center;
