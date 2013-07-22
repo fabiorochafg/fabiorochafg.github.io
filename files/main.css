@@ -74,6 +74,7 @@ ul {
 .box {
     margin: 0 -2%;
     overflow: hidden;
+    width: 104%;
 }
 .box > div {
     float: left;
@@ -619,9 +620,6 @@ ul {
         height: 80px;
         line-height: 80px;
     }
-    #repositories {
-        padding: 4% 10% 12%;
-    }
     .boxes > li {
         width: 100%;
     }
@@ -641,11 +639,33 @@ ul {
     }
 }
 @media screen and (max-width: 800px) {
+    #about > div.left,
+    #about > div.right {
+        float: left;
+        width: 100%;
+    }
+    #about > div.right h3 {
+        text-align: left;
+    }
+    #about > div.right li {
+        float: left;
+    }
+    #about > div.right p {
+        float: left;
+        text-align: left;
+    }
+    #gists .gists a {
+        padding: 0.5% 2% !important;
+        width: 96% !important;
+    }
+    #gists .gists .box6 {
+        width: 99%;
+    }
     #header {
         background: #555555;
     }
     #header > div div {
-        margin: 4% 10% 0;
+        padding: 8% 10% 0;
         width: 80%;
     }
     #header dt,
@@ -656,12 +676,24 @@ ul {
         font-size: 120%;
     }
     #repositories {
-        padding: 4% 10% 12%;
+        background-image: none;
+    }
+    #repositories .box {
+        margin: 7% -2% 0;
+    }
+    .box .box3,
+    .box .box4 {
+        margin: 2% 2% 6%;
+        width: 46%;
     }
 }
 @media screen and (max-width: 600px) {
     #portfolio .box > div a span {
         display: none;
+    }
+    .box .box3,
+    .box .box4 {
+        width: 96%;
     }
     .boxes > li {
         width: 100%;
