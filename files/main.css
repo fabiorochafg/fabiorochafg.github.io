@@ -174,13 +174,12 @@ ul {
 /* About */
 #about {
     background: #222222;
-    background: rgba(34,34,34,1);
-    background: -moz-linear-gradient(top, rgba(34,34,34,1) 0%, rgba(51,51,51,1) 100%);
-    background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(34,34,34,1)), color-stop(100%, rgba(51,51,51,1)));
-    background: -webkit-linear-gradient(top, rgba(34,34,34,1) 0%, rgba(51,51,51,1) 100%);
-    background: -o-linear-gradient(top, rgba(34,34,34,1) 0%, rgba(51,51,51,1) 100%);
-    background: -ms-linear-gradient(top, rgba(34,34,34,1) 0%, rgba(51,51,51,1) 100%);
-    background: linear-gradient(to bottom, rgba(34,34,34,1) 0%, rgba(51,51,51,1) 100%);
+    background: -moz-linear-gradient(top, #222222 0%, #333333 100%);
+    background: -webkit-gradient(left top, left bottom, color-stop(0%, #222222), color-stop(100%, #333333));
+    background: -webkit-linear-gradient(top, #222222 0%, #333333 100%);
+    background: -o-linear-gradient(top, #222222 0%, #333333 100%);
+    background: -ms-linear-gradient(top, #222222 0%, #333333 100%);
+    background: linear-gradient(to bottom, #222222 0%, #333333 100%);
     color: #bbbbbb;
 }
 #about > div.left {
@@ -391,13 +390,12 @@ ul {
 /* Gists */
 #gists {
     background: #eeeeee;
-    background: rgba(238,238,238,1);
-    background: -moz-linear-gradient(top, rgba(238,238,238,1) 0%, rgba(255,255,255,1) 100%);
-    background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(238,238,238,1)), color-stop(100%, rgba(255,255,255,1)));
-    background: -webkit-linear-gradient(top, rgba(238,238,238,1) 0%, rgba(255,255,255,1) 100%);
-    background: -o-linear-gradient(top, rgba(238,238,238,1) 0%, rgba(255,255,255,1) 100%);
-    background: -ms-linear-gradient(top, rgba(238,238,238,1) 0%, rgba(255,255,255,1) 100%);
-    background: linear-gradient(to bottom, rgba(238,238,238,1) 0%, rgba(255,255,255,1) 100%);
+    background: -moz-linear-gradient(top, #eeeeee 0%, #ffffff 100%);
+    background: -webkit-gradient(left top, left bottom, color-stop(0%, #eeeeee), color-stop(100%, #ffffff));
+    background: -webkit-linear-gradient(top, #eeeeee 0%, #ffffff 100%);
+    background: -o-linear-gradient(top, #eeeeee 0%, #ffffff 100%);
+    background: -ms-linear-gradient(top, #eeeeee 0%, #ffffff 100%);
+    background: linear-gradient(to bottom, #eeeeee 0%, #ffffff 100%);
     color: #666666;
     padding: 4% 10% 5%;
 }
@@ -436,13 +434,12 @@ ul {
 /* Portfolio */
 #portfolio {
     background: #666666;
-    background: rgba(102,102,102,1);
-    background: -moz-linear-gradient(top, rgba(102,102,102,1) 0%, rgba(119,119,119,1) 100%);
-    background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(102,102,102,1)), color-stop(100%, rgba(119,119,119,1)));
-    background: -webkit-linear-gradient(top, rgba(102,102,102,1) 0%, rgba(119,119,119,1) 100%);
-    background: -o-linear-gradient(top, rgba(102,102,102,1) 0%, rgba(119,119,119,1) 100%);
-    background: -ms-linear-gradient(top, rgba(102,102,102,1) 0%, rgba(119,119,119,1) 100%);
-    background: linear-gradient(to bottom, rgba(102,102,102,1) 0%, rgba(119,119,119,1) 100%);
+    background: -moz-linear-gradient(top, #666666 0%, #777777 100%);
+    background: -webkit-gradient(left top, left bottom, color-stop(0%, #666666), color-stop(100%, #777777));
+    background: -webkit-linear-gradient(top, #666666 0%, #777777 100%);
+    background: -o-linear-gradient(top, #666666 0%, #777777 100%);
+    background: -ms-linear-gradient(top, #666666 0%, #777777 100%);
+    background: linear-gradient(to bottom, #666666 0%, #777777 100%);
     color: #dddddd;
     padding: 4% 10%;
 }
@@ -605,7 +602,8 @@ ul {
         font-size: 120%;
     }
     #header {
-        background: #555555;
+        background-color: #555555;
+        background-size: auto 100%;  
     }
     #header > div div {
         margin: 4% 10% 0;
@@ -619,6 +617,9 @@ ul {
         font-size: 120%;
         height: 80px;
         line-height: 80px;
+    }
+    #repositories {
+        background-size: auto 100%;  
     }
     .boxes > li {
         width: 100%;
@@ -662,7 +663,8 @@ ul {
         width: 99%;
     }
     #header {
-        background: #555555;
+        background-color: #555555;
+        background-size: auto 100%;  
     }
     #header > div div {
         padding: 8% 10% 0;
@@ -676,7 +678,7 @@ ul {
         font-size: 120%;
     }
     #repositories {
-        background-image: none;
+        background-size: auto 100%;  
     }
     #repositories .box {
         margin: 7% -2% 0;
