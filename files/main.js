@@ -28,8 +28,6 @@ $(document).ready(function() {
         }
     });
 
-    /* Portfolio */
-
 });
 
 $(window).load(function(){
@@ -37,7 +35,7 @@ $(window).load(function(){
 	$('#portfolio .box').masonry({
 	  	itemSelector: '.box3'
 	});
-	    $("#portfolio .box3").each(function(){
+	$("#portfolio .box3").each(function(){
     	$(this).find("div").css("height", $(this).find("img").height());
     });
 });
