@@ -19,12 +19,16 @@ $(document).ready(function() {
 	$(window).scroll(function() {
 		if ($(this).scrollTop() == 0) {
 			$("#menu a").removeClass("active");
+			$("#header p").removeClass("opacity");
+		} else {
+			$("#header p").addClass("opacity");
 		}
         if ($(this).scrollTop() <= $(window).height()-50) {
         	$("#menu").removeClass("menufixo");
             $("#menu").css("bottom", $(this).scrollTop());
         } else {
             $("#menu").addClass("menufixo");
+            
         }
     });
 

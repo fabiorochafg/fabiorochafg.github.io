@@ -121,8 +121,15 @@ ul {
     color: #eeeeee;
     font-size: 220%;
     line-height: 42px;
+    opacity: 1;
     text-align: right;
     text-shadow: 1px 1px 1px #000000;
+    transition: opacity .35s ease-in-out;
+    -moz-transition: opacity .35s ease-in-out;
+    -webkit-transition: opacity .35s ease-in-out;
+}
+#header p.opacity {
+    opacity: 0.3;
 }
 #header p:nth-child(2) {
     font-size: 140%;
