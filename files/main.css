@@ -7,8 +7,11 @@
     outline: 0 none;
     padding: 0;
 }
-a, a:link, a:active {
+a,
+a:active,
+a:link {
     color: #ffffff;
+    text-decoration: none;
 }
 a:hover {
     color: #aaaaaa;
@@ -101,7 +104,7 @@ ul {
 }
 
 /* Header */
-#header {
+header {
     background-attachment: fixed;
     background-color: #111111;
     background-image: url(../images/bg.jpg);
@@ -109,15 +112,15 @@ ul {
     background-position: center 0;
     background-size: 100% auto;
 }
-#header > div {
+header > div {
     background: rgba(0, 0, 0, 0.7);
 }
-#header > div div {
+header > div div {
     float: right;
     padding: 20% 10% 0 0;
     width: 45%;
 }
-#header p {    
+header p {    
     color: #eeeeee;
     font-size: 220%;
     line-height: 42px;
@@ -128,17 +131,17 @@ ul {
     -moz-transition: opacity .35s ease-in-out;
     -webkit-transition: opacity .35s ease-in-out;
 }
-#header p.opacity {
+header p.opacity {
     opacity: 0.3;
 }
-#header p:nth-child(2) {
+header p:nth-child(2) {
     font-size: 140%;
     line-height: 26px;
     padding: 5px 0 0;
 }
 
-/* Menu */
-#menu {
+/* Nav */
+nav.container {
     background: #000000;
     bottom: 0;
     height: 50px;
@@ -146,13 +149,13 @@ ul {
     position: fixed;
     z-index: 1;
 }
-    #menu.menufixo {
+    nav.menufixo {
         top: 0 !important;
     }
-#menu li {
+nav li {
     list-style: none;
 }
-#menu li a {
+nav li a {
     color: #fff;
     display: block;
     float: left;
@@ -164,14 +167,14 @@ ul {
     text-decoration: none;
     text-shadow: 1px 1px 1px #000000;
 }
-#menu li a:hover,
-#menu li a.active {
+nav li a:hover,
+nav li a.active {
     color: #999999;
 }
-#menu li.language {
+nav li.language {
     float: right;
 }
-#menu li.language a {
+nav li.language a {
     color: #aaaaaa;
     font-size: 85%;
     font-weight: normal;
@@ -218,7 +221,7 @@ ul {
     text-align: right;
 }
 #about > div.right li {
-    background: #000;
+    background: #000000;
     float: right;
     font-size: 95%;
     list-style: none;
@@ -421,7 +424,7 @@ ul {
     width: 99%;
 }
 #gists .gists li:hover {
-    background: #ddd;
+    background: #dddddd;
 }
 #gists .gists li > a {
     color: #333333;
@@ -487,7 +490,7 @@ ul {
     text-decoration: none;
 }
 #portfolio .box > div a:hover {
-    background: #ccc;
+    background: #cccccc;
 }
 #portfolio .box > div a span {
     font-weight: normal;
@@ -608,19 +611,19 @@ ul {
     body {
         font-size: 120%;
     }
-    #header {
+    header {
         background-color: #555555;
         background-size: auto 100%;  
     }
-    #header > div div {
+    header > div div {
         margin: 4% 10% 0;
         width: 80%;
     }
-    #header dt,
-    #header dd {
+    header dt,
+    header dd {
         font-size: 105%;
     }
-    #menu li a {
+    nav li a {
         font-size: 120%;
         height: 80px;
         line-height: 80px;
@@ -647,6 +650,21 @@ ul {
     }
 }
 @media screen and (max-width: 800px) {
+    header {
+        background-color: #555555;
+        background-size: auto 100%;  
+    }
+    header > div div {
+        padding: 8% 10% 0;
+        width: 80%;
+    }
+    header dt,
+    header dd {
+        font-size: 105%;
+    }
+    nav li a {
+        font-size: 120%;
+    }
     #about > div.left,
     #about > div.right {
         float: left;
@@ -668,21 +686,6 @@ ul {
     }
     #gists .gists .box6 {
         width: 99%;
-    }
-    #header {
-        background-color: #555555;
-        background-size: auto 100%;  
-    }
-    #header > div div {
-        padding: 8% 10% 0;
-        width: 80%;
-    }
-    #header dt,
-    #header dd {
-        font-size: 105%;
-    }
-    #menu li a {
-        font-size: 120%;
     }
     #repositories {
         background-size: auto 100%;  
