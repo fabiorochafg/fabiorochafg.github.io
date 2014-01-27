@@ -32,6 +32,21 @@ $(document).ready(function() {
         }
     });
 
+	// Gists
+    jQuery(".gists > li > a").click(function() {
+        jQuery(this).parent().find(".gist").animate({
+            height: 'toggle'
+        });
+        jQuery(this).parent().toggleClass("active");
+        var atributo = jQuery(this).attr("title");
+        if (atributo == "Mostrar informações") {
+            jQuery(this).attr("title", "Esconder informações");
+        } else {
+            jQuery(this).attr("title", "Mostrar informações");
+        }
+        return false;
+    });
+
 });
 
 $(window).load(function(){

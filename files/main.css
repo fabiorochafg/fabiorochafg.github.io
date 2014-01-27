@@ -59,6 +59,9 @@ h3 {
     font-size: 130%;
     padding: 0 0 20px;
 }
+pre {
+    font-size: 85% !important;
+}
 ul {
     line-height: 1.5em;
 }
@@ -427,6 +430,12 @@ nav li.language a {
 #gists .gists li:hover {
     background: #dddddd;
 }
+#gists .gists li.active {
+    background: #999999;
+}
+#gists .gists li.active > a {
+    color: #ffffff;
+}
 #gists .gists li > a {
     color: #333333;
     display: block;
@@ -440,6 +449,9 @@ nav li.language a {
 #gists .gists .box6 a {
     padding: 1% 2%;
     width: 96%;
+}
+#gists .gist {
+    display: none;
 }
 
 /* Portfolio */
@@ -551,7 +563,7 @@ nav li.language a {
     margin: 0 0 40px;
 }
 #repositories > p a {
-    color: #222222;
+    color: #888888;
 }
 #repositories > p a:hover {
     color: #666666;
