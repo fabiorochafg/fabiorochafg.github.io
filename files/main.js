@@ -28,7 +28,6 @@ $(document).ready(function() {
             $("nav").css("bottom", $(this).scrollTop());
         } else {
             $("nav").addClass("menufixo");
-            
         }
     });
 
