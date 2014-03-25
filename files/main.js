@@ -54,7 +54,7 @@ $(window).load(function(){
 	  	itemSelector: '.box3'
 	});
 	$("#portfolio .box3").each(function(){
-    	$(this).find("div").css("height", $(this).find("img").height());
+    	$(this).find("div").css("height", $(this).find("img").outerHeight());
     });
 });
 
