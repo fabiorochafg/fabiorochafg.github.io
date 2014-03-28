@@ -343,44 +343,44 @@ nav li.language a {
     background-image: url(../images/contact-telefone.png);
 }
 #about .percent dd {
-    padding: 5px 2%;
+    padding: 0 2%;
     text-align: right;
     text-shadow: 1px 1px 1px #222222;
 }
 #about .percent dt {
-    padding: 5px 1%;
+    padding: 0 1%;
     text-align: center;
-    width: 20%;
+    width: 22%;
 }
 #about .percent10 {
-    width: 7.4%;
+    width: 5.4%;
 }
 #about .percent20 {
-    width: 14.8%;
+    width: 12.8%;
 }
 #about .percent30 {
-    width: 22.2%;
+    width: 20.2%;
 }
 #about .percent40 {
-    width: 29.6%;
+    width: 27.6%;
 }
 #about .percent50 {
-    width: 37%;
+    width: 35%;
 }
 #about .percent60 {
-    width: 44.4%;
+    width: 42.4%;
 }
 #about .percent70 {
-    width: 51.8%;
+    width: 49.8%;
 }
 #about .percent80 {
-    width: 59.2%;
+    width: 57.2%;
 }
 #about .percent90 {
-    width: 66.6%;
+    width: 64.6%;
 }
 #about .percent100 {
-    width: 74%;
+    width: 72%;
 }
 #bio-photo {
     background-image: url(../images/bio.png);
