@@ -15,8 +15,7 @@
     box-sizing: border-box;
 }
 a,
-a:active,
-a:link {
+a:active {
     color: #ffffff;
     text-decoration: none;
 }
