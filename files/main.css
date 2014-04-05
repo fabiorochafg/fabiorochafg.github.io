@@ -639,13 +639,17 @@ nav li.language a {
     header dd {
         font-size: 105%;
     }
-    nav li a {
-        font-size: 120%;
-        height: 80px;
-        line-height: 80px;
+    nav {
+        display: none;
+    }
+    #gists .gists li > a {
+        padding: 1%;
     }
     #repositories {
         background-size: auto 100%;  
+    }
+    #repositories .boxes li a {
+        font-size: 110%;
     }
     .boxes > li {
         width: 100%;
@@ -671,12 +675,16 @@ nav li.language a {
         background-size: auto 100%;  
     }
     header > div div {
+        float: left;
         padding: 8% 10% 0;
         width: 80%;
     }
     header dt,
     header dd {
         font-size: 105%;
+    }
+    header p {
+        text-align: left;
     }
     nav li a {
         font-size: 120%;
