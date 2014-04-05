@@ -707,7 +707,7 @@ nav li.language a {
         width: 100% !important;
     }
     #gists .gists a {
-        padding: 0.5% 2% !important;
+        padding: 0.5% 2%;
         width: 96% !important;
     }
     #gists .gists .box6 {
@@ -726,6 +726,14 @@ nav li.language a {
     }
 }
 @media screen and (max-width: 600px) {
+    header p {
+        transition: none;
+        -moz-transition: none;
+        -webkit-transition: none;
+    }
+    header p.opacity {
+        opacity: 1;
+    }
     #portfolio .box > div a span {
         display: none;
     }
