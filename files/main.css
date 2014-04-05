@@ -627,9 +627,6 @@ nav li.language a {
 
 /* Media-queries */
 @media only screen and (max-device-width: 480px), only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:portrait), only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:landscape) {
-    body {
-        font-size: 120%;
-    }
     header {
         background-color: #555555;
         background-size: auto 100%;  
