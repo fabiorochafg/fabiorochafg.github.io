@@ -245,20 +245,20 @@ nav li.language a {
     text-align: right;
 }
 #about > div.right p:nth-child(2) {
-    font-size: 145%;
-    width: 90%;
+    font-size: 100%;
+    width: 60%;
 }
 #about > div.right p:nth-child(3) {
-    font-size: 130%;
-    width: 80%;
-}
-#about > div.right p:nth-child(4) {
     font-size: 115%;
     width: 70%;
 }
+#about > div.right p:nth-child(4) {
+    font-size: 130%;
+    width: 80%;
+}
 #about > div.right p:nth-child(5) {
-    font-size: 100%;
-    width: 60%;
+    font-size: 145%;
+    width: 90%;
 }
 #about > div.right p a {
     text-decoration: underline;
@@ -295,10 +295,10 @@ nav li.language a {
     padding: 5px 15px;
 }
 #about dd:hover {
-    background: #444;
+    background: #444444;
 }
 #about h3 {
-    color: #aaa;
+    color: #cccccc;
     display: inline-block;
     margin: 7% 0 0;
     text-shadow: 1px 1px 1px #111111;
@@ -534,14 +534,14 @@ nav li.language a {
 #repositories {
     background-attachment: fixed;
     background-color: #111111;
-    background-image: url(../images/bg-repositories.png);
+    background-image: url(../images/bg-repositories.jpg);
     background-repeat: no-repeat;
     background-position: center 0;
     background-size: 100% auto;
-    color: #bbbbbb;
+    color: #dddddd;
 }
 #repositories a {
-    color: #dddddd;
+    color: #bbbbbb;
 }
 #repositories > div {
     background: rgba(0, 0, 0, 0.7);
@@ -558,7 +558,6 @@ nav li.language a {
     float: left;
     line-height: 20px;
     padding: 3px 0 8px 60px;
-    text-align: justify;
 }
 #repositories h3 {
     float: left;
@@ -706,9 +705,9 @@ nav li.language a {
         text-align: left;
         width: 100% !important;
     }
-    #gists .gists a {
+    #gists .gists li > a {
         padding: 0.5% 2%;
-        width: 96% !important;
+        width: 96%;
     }
     #gists .gists .box6 {
         width: 99%;
