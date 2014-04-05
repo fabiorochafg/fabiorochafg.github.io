@@ -702,7 +702,9 @@ nav li.language a {
     }
     #about > div.right p {
         float: left;
+        font-size: 115% !important;
         text-align: left;
+        width: 100% !important;
     }
     #gists .gists a {
         padding: 0.5% 2% !important;
