@@ -140,6 +140,9 @@ header p {
     -moz-transition: opacity .35s ease-in-out;
     -webkit-transition: opacity .35s ease-in-out;
 }
+header p a {
+    text-decoration: underline;
+}
 header p.opacity {
     opacity: 0.3;
 }
