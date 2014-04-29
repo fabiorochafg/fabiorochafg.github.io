@@ -421,6 +421,7 @@ nav li.language a {
 }
 #gists a {
     color: #777777;
+    text-decoration: underline;
 }
 #gists .gists {
     margin: 40px -0.5% 0;
@@ -534,7 +535,7 @@ nav li.language a {
 #repositories {
     background-attachment: fixed;
     background-color: #111111;
-    background-image: url(../images/bg-repositories.png);
+    background-image: url(../images/bg-repositories.jpg);
     background-repeat: no-repeat;
     background-position: center 0;
     background-size: 100% auto;
@@ -542,6 +543,7 @@ nav li.language a {
 }
 #repositories a {
     color: #bbbbbb;
+    text-decoration: underline;
 }
 #repositories > div {
     background: rgba(0, 0, 0, 0.7);
@@ -566,9 +568,6 @@ nav li.language a {
 }
 #repositories > p {
     margin: 0 0 40px;
-}
-#repositories > p a {
-    color: #888888;
 }
 #repositories > p a:hover {
     color: #666666;
