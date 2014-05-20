@@ -209,23 +209,6 @@ nav li.language a {
     float: left;
     width: 42.5%;
 }
-#about > div.left li {
-    background: #000000;
-    color: #eeeeee;
-    display: block;
-    font-size: 110%;
-    height: 30px;
-    line-height: 30px;
-    list-style: none;
-    margin: 0 0 10px;
-    padding: 5px 15px;
-}
-#about > div.left li:hover {
-    background: #333333;
-}
-#about > div.left ul {
-    float: left;
-}
 #about > div.right {
     float: right;
     width: 52.5%;
@@ -453,13 +436,6 @@ nav li.language a {
     text-decoration: none;
     width: 98%;
 }
-#gists .gists .box6 {
-    width: 49%;
-}
-#gists .gists .box6 a {
-    padding: 1% 2%;
-    width: 96%;
-}
 #gists .gist {
     display: none;
 }
@@ -575,16 +551,6 @@ nav li.language a {
 #repositories > p a:hover {
     color: #666666;
 }
-#repositories > ul {
-    width: 100%;
-}
-#repositories > ul > li {
-    float: left;
-    list-style: none;
-    margin: 0 0 5%;
-    position: relative;
-    width: 100%;
-}
 #repositories .box {
     margin: 3% -2% 0;
 }
@@ -636,10 +602,6 @@ nav li.language a {
         margin: 4% 10% 0;
         width: 80%;
     }
-    header dt,
-    header dd {
-        font-size: 105%;
-    }
     nav {
         display: none;
     }
@@ -655,9 +617,6 @@ nav li.language a {
     .boxes > li {
         width: 100%;
     }
-    .boxes > li.middle {
-        margin: 0 0 5%;
-    }
 }
 @media screen and (max-width: 1024px) {
     .boxes > li {
@@ -665,9 +624,6 @@ nav li.language a {
     }
     .boxes > li:nth-child(2n+1) {
         float: right;
-    }
-    .boxes > li.middle {
-        margin: 0 0 5%;
     }
 }
 @media screen and (max-width: 800px) {
@@ -679,10 +635,6 @@ nav li.language a {
         float: left;
         padding: 8% 10% 0;
         width: 80%;
-    }
-    header dt,
-    header dd {
-        font-size: 105%;
     }
     header p {
         text-align: left;
@@ -710,9 +662,6 @@ nav li.language a {
     #gists .gists li > a {
         padding: 0.5% 2%;
         width: 96%;
-    }
-    #gists .gists .box6 {
-        width: 99%;
     }
     #repositories {
         background-size: auto 100%;  
@@ -744,8 +693,5 @@ nav li.language a {
     }
     .boxes > li {
         width: 100%;
-    }
-    .boxes > li.middle {
-        margin: 0 0 5%;
     }
 }
