@@ -432,9 +432,9 @@ nav li.language a {
 #gists .gists li > a {
     color: #333333;
     display: block;
-    padding: 0.5% 1%;
+    padding: 10px;
     text-decoration: none;
-    width: 98%;
+    width: 100%;
 }
 #gists .gist {
     display: none;
@@ -605,9 +605,6 @@ nav li.language a {
     nav {
         display: none;
     }
-    #gists .gists li > a {
-        padding: 2%;
-    }
     #repositories {
         background-size: auto 100%;  
     }
@@ -659,10 +656,6 @@ nav li.language a {
         text-align: left;
         width: 100% !important;
     }
-    #gists .gists li > a {
-        padding: 0.5% 2%;
-        width: 96%;
-    }
     #repositories {
         background-size: auto 100%;  
     }
@@ -671,7 +664,6 @@ nav li.language a {
     }
     .box .box3,
     .box .box4 {
-        margin: 2% 2% 6%;
         width: 46%;
     }
 }
