@@ -439,6 +439,9 @@ nav li.language a {
 #gists .gist {
     display: none;
 }
+#gists .gist-file {
+    margin: 0;
+}
 
 /* Portfolio */
 #portfolio {
