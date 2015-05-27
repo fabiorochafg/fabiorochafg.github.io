@@ -233,20 +233,20 @@ nav li.language a {
     text-align: right;
 }
 #about > div.right p:nth-child(2) {
-    font-size: 100%;
-    width: 60%;
+    font-size: 145%;
+    width: 90%;
 }
 #about > div.right p:nth-child(3) {
-    font-size: 115%;
-    width: 70%;
-}
-#about > div.right p:nth-child(4) {
     font-size: 130%;
     width: 80%;
 }
+#about > div.right p:nth-child(4) {
+    font-size: 115%;
+    width: 70%;
+}
 #about > div.right p:nth-child(5) {
-    font-size: 145%;
-    width: 90%;
+    font-size: 100%;
+    width: 60%;
 }
 #about > div.right p a {
     text-decoration: underline;
