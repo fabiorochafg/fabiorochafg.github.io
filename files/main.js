@@ -4,7 +4,7 @@ $(document).ready(function() {
 	$("header, header > div").css("height", $(window).height());
 
 	/* Menu */
-	$('nav li:not(.language) a').on('click',function (e) {
+	$('nav li:not(.language) a').on('click', function (e) {
 		$("nav a").removeClass("active");
 		$(this).toggleClass("active");
 	    e.preventDefault();
