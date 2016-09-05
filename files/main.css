@@ -1,6 +1,6 @@
 /* CSS Document - Developed by Fabio Rocha (https://fabiorochafg.github.io | fabiorochafg@gmail.com) */
 
-@import url(http://fonts.googleapis.com/css?family=Titillium+Web:300,400,600,700);
+/*@import url(http://fonts.googleapis.com/css?family=Titillium+Web:300,400,600,700);*/
 
 /* Base */
 * {
@@ -117,11 +117,11 @@ ul {
 /* Header */
 header {
     background-attachment: fixed;
-    background-color: #111111;
-    background-image: url(../images/bg.png);
+    background-color: #111;
+    background-image: url(../images/bg-header.jpg);
     background-repeat: no-repeat;
     background-position: center 0;
-    background-size: 100% auto;
+    background-size: cover;
 }
 header > div {
     background: rgba(0, 0, 0, 0.7);
@@ -337,7 +337,7 @@ nav li.language a {
 #about .percent dt {
     padding: 0 1%;
     text-align: center;
-    width: 22%;
+    width: 28%;
 }
 #about .percent10 {
     width: 5.4%;
@@ -370,7 +370,7 @@ nav li.language a {
     width: 72%;
 }
 #bio-photo {
-    background-image: url(../images/bio.png);
+    background-image: url(../images/bio.jpg);
     background-repeat: no-repeat;
     background-position: 0 0;
     background-size: 138px 138px;
@@ -599,10 +599,6 @@ nav li.language a {
 
 /* Media-queries */
 @media only screen and (max-device-width: 480px), only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:portrait), only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:landscape) {
-    header {
-        background-color: #555555;
-        background-size: auto 100%;  
-    }
     header > div div {
         margin: 4% 10% 0;
         width: 80%;
@@ -629,10 +625,6 @@ nav li.language a {
     }
 }
 @media screen and (max-width: 800px) {
-    header {
-        background-color: #555555;
-        background-size: auto 100%;  
-    }
     header > div div {
         float: left;
         padding: 8% 10% 0;
