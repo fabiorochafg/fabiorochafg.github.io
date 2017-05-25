@@ -1,10 +1,9 @@
 /* JS Document - Developed by Fabio Rocha (http://fabiorochafg.github.io | fabiorochafg@gmail.com) */
 
 $(document).ready(function() {
-	$("header, header > div").css("height", $(window).height());
 
 	/* Menu */
-	$('nav li:not(.language) a').on('click', function (e) {
+	$('nav a, .anchor').on('click', function (e) {
 		$("nav a").removeClass("active");
 		$(this).toggleClass("active");
 	    e.preventDefault();
@@ -31,31 +30,6 @@ $(document).ready(function() {
         }
     });
 
-	// Gists
-    jQuery(".gists > li > a").click(function() {
-        jQuery(this).parent().find(".gist").animate({
-            height: 'toggle'
-        });
-        jQuery(this).parent().toggleClass("active");
-        var atributo = jQuery(this).attr("title");
-        if (atributo == "Mostrar informações") {
-            jQuery(this).attr("title", "Esconder informações");
-        } else {
-            jQuery(this).attr("title", "Mostrar informações");
-        }
-        return false;
-    });
-
-});
-
-$(window).load(function(){
-	/* Portfolio */
-	$('#portfolio .box').masonry({
-	  	itemSelector: '.box3'
-	});
-	$("#portfolio .box3").each(function(){
-    	$(this).find("div").css("height", $(this).find("img").outerHeight());
-    });
 });
 
 /* Google Analyctis */

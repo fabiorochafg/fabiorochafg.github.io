@@ -1,6 +1,6 @@
 /* CSS Document - Developed by Fabio Rocha (https://fabiorochafg.github.io | fabiorochafg@gmail.com) */
 
-/*@import url(http://fonts.googleapis.com/css?family=Titillium+Web:300,400,600,700);*/
+@import url(http://fonts.googleapis.com/css?family=Titillium+Web:200,400,600);
 
 /* Base */
 * {
@@ -18,15 +18,19 @@
 }
 a,
 a:active {
-    color: #ffffff;
+    color: #fff;
     text-decoration: none;
+    -webkit-transition: all 0.4s;
+    -moz-transition: all 0.4s;
+    -o-transition: all 0.4s;
+    transition: all 0.4s;
 }
 a:hover {
-    color: #aaaaaa;
+    color: #aaa;
     text-decoration: underline;
 }
 body {
-    background: #111111;
+    background-color: #111;
     font-family: 'Titillium Web', sans-serif;
     font-size: 100%;
 }
@@ -34,16 +38,16 @@ code {
     clear: left;
     display: block;
     font-size: 95%;
-    padding: 0 0 0 60px;
+    padding-left: 60px;
 }
 dd {
-    font-weight: bold;
-    padding: 0 0 2px;
+    font-weight: 600;
+    padding-bottom: 2px;
 }
 dt {
     clear: left;
     float: left;
-    margin: 0 5px 0 0;
+    margin-right: 5px;
 }
 h1 {
     float: left;
@@ -60,6 +64,7 @@ h1 a:hover {
     opacity: 0.5;
 }
 h2 {
+    color: #fff;
     font-size: 300%;
     padding: 10px 0 0;
 }
@@ -74,11 +79,112 @@ ul {
     line-height: 1.5em;
 }
 
-/* Layout */
-#wrapper {
-    position: relative;
-    width: 100%;
+/* Header */
+header {
+    background-attachment: fixed;
+    background-color: #111;
+    background-image: url(../images/bg-header.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    height: 100vh;
 }
+header:before {
+    background: rgba(0, 0, 0, 0.1);
+    bottom: 0;
+    content: "";
+    left: 0;
+    right: 0;
+    top: 0;
+    position: absolute;
+}
+header > * {
+    position: relative;
+}
+header > div {
+    float: right;
+    padding-right: 10%;
+    padding-top: 20%;
+    width: 45%;
+}
+header p { 
+    color: #000;
+    font-size: 260%;
+    line-height: 1.2em;
+    opacity: 1;
+    text-align: right;
+    transition: opacity .35s ease-in-out;
+    -moz-transition: opacity .35s ease-in-out;
+    -webkit-transition: opacity .35s ease-in-out;
+}
+header p a {
+    color: #000;
+    text-decoration: underline;
+}
+header p a:hover {
+    color: #555;
+}
+header p strong { 
+    white-space: nowrap;
+}
+header p.opacity {
+    opacity: 0.3;
+}
+header p:nth-child(3) {
+    font-size: 140%;
+    line-height: 1.3em;
+    padding-top: 25px;
+}
+
+/* Nav */
+nav.container {
+    background: #000;
+    bottom: 0;
+    height: 50px;
+    padding: 0 10%;
+    position: fixed;
+    z-index: 1;
+}
+    nav.menufixo {
+        top: 0 !important;
+    }
+nav li {
+    list-style: none;
+}
+nav li a {
+    color: #fff;
+    display: block;
+    float: left;
+    font-size: 150%;
+    font-weight: 600;
+    height: 50px;
+    line-height: 50px;
+    padding-right: 40px;
+    text-decoration: none;
+    text-shadow: 1px 1px 1px #000;
+}
+nav li a:hover,
+nav li a.active {
+    color: #999;
+    text-decoration: none;
+}
+
+/* Footer */
+footer.container {
+    padding-bottom: 0;
+    padding-top: 0;
+}
+footer p {
+    color: #aaa;
+    font-size: 85%;
+    font-weight: 200;
+    padding: 10px 0;
+}
+footer span {
+    padding: 0 2px;
+}
+
+/* Functional Classes */
 .container {
     margin: 0 auto;
     overflow: hidden;
@@ -113,99 +219,27 @@ ul {
 .box .box1 {
     width: 4.3333%;
 }
-
-/* Header */
-header {
-    background-attachment: fixed;
-    background-color: #111;
-    background-image: url(../images/bg-header.jpg);
-    background-repeat: no-repeat;
-    background-position: center 0;
-    background-size: cover;
+.columns {
+    column-count: 3;
+    column-gap: 75px;
 }
-header > div {
-    background: rgba(0, 0, 0, 0.7);
-}
-header > div div {
-    float: right;
-    padding: 20% 10% 0 0;
-    width: 45%;
-}
-header p {    
-    color: #eeeeee;
-    font-size: 220%;
-    line-height: 42px;
-    opacity: 1;
-    text-align: right;
-    text-shadow: 1px 1px 1px #000000;
-    transition: opacity .35s ease-in-out;
-    -moz-transition: opacity .35s ease-in-out;
-    -webkit-transition: opacity .35s ease-in-out;
-}
-header p a {
-    text-decoration: underline;
-}
-header p.opacity {
-    opacity: 0.3;
-}
-header p:nth-child(2) {
-    font-size: 140%;
-    line-height: 26px;
-    padding: 5px 0 0;
-}
-
-/* Nav */
-nav.container {
-    background: #000000;
-    bottom: 0;
-    height: 50px;
-    padding: 0 10%;
-    position: fixed;
-    z-index: 1;
-}
-    nav.menufixo {
-        top: 0 !important;
-    }
-nav li {
-    list-style: none;
-}
-nav li a {
-    color: #fff;
-    display: block;
-    float: left;
-    font-size: 150%;
-    font-weight: bold;
-    height: 50px;
-    line-height: 50px;
-    padding: 0 40px 0 0;
-    text-decoration: none;
-    text-shadow: 1px 1px 1px #000000;
-}
-nav li a:hover,
-nav li a.active {
-    color: #999999;
-    text-decoration: none;
-}
-nav li.language {
-    float: right;
-}
-nav li.language a {
-    color: #aaaaaa;
-    font-size: 85%;
-    font-weight: normal;
-    padding: 0;
+.columns > div {
+    break-inside: avoid;
+    display: inline-block;
+    padding-bottom: 50px;
+    width: 100%;
 }
 
 /* About */
 #about {
-    background: #222222;
-    background: -moz-linear-gradient(top, #222222 0%, #333333 100%);
-    background: -webkit-gradient(left top, left bottom, color-stop(0%, #222222), color-stop(100%, #333333));
-    background: -webkit-linear-gradient(top, #222222 0%, #333333 100%);
-    background: -o-linear-gradient(top, #222222 0%, #333333 100%);
-    background: -ms-linear-gradient(top, #222222 0%, #333333 100%);
-    background: linear-gradient(to bottom, #222222 0%, #333333 100%);
-    color: #bbbbbb;
+    background: #222;
+    background: -moz-linear-gradient(top, #222 0%, #333 100%);
+    background: -webkit-gradient(left top, left bottom, color-stop(0%, #222), color-stop(100%, #333));
+    background: -webkit-linear-gradient(top, #222 0%, #333 100%);
+    background: -o-linear-gradient(top, #222 0%, #333 100%);
+    background: -ms-linear-gradient(top, #222 0%, #333 100%);
+    background: linear-gradient(to bottom, #222 0%, #333 100%);
+    color: #bbb;
 }
 #about > div.left {
     float: left;
@@ -219,12 +253,12 @@ nav li.language a {
     text-align: right;
 }
 #about > div.right li {
-    background: #000000;
+    background: #000;
     float: right;
     font-size: 95%;
     list-style: none;
     margin: 0 0 5px 5px;
-    padding: 3px 6px;
+    padding: 4px 12px;
 }
 #about > div.right p {
     float: right;
@@ -233,15 +267,15 @@ nav li.language a {
     text-align: right;
 }
 #about > div.right p:nth-child(2) {
-    font-size: 145%;
+    font-size: 160%;
     width: 90%;
 }
 #about > div.right p:nth-child(3) {
-    font-size: 130%;
+    font-size: 140%;
     width: 80%;
 }
 #about > div.right p:nth-child(4) {
-    font-size: 115%;
+    font-size: 120%;
     width: 70%;
 }
 #about > div.right p:nth-child(5) {
@@ -252,11 +286,11 @@ nav li.language a {
     text-decoration: underline;
 }
 #about a {
-    color: #aaaaaa;
+    color: #aaa;
     text-decoration: none;
 }
 #about a:hover {
-    color: #ffffff;
+    color: #fff;
 }
 #about dl {
     float: left;
@@ -264,8 +298,8 @@ nav li.language a {
     width: 100%;
 }
 #about dt {
-    background: #000000;
-    color: #eeeeee;
+    background: #000;
+    color: #eee;
     font-size: 105%;
     height: 30px;
     line-height: 30px;
@@ -273,23 +307,23 @@ nav li.language a {
     padding: 5px 15px;
 }
 #about dd {
-    background: #555555;
+    background: #555;
     float: left;
-    font-size: 130%;
-    font-weight: normal;
+    font-size: 120%;
+    font-weight: 400;
     height: 30px;
     line-height: 30px;
     margin: 0 0 10px;
     padding: 5px 15px;
 }
 #about dd:hover {
-    background: #444444;
+    background: #444;
 }
 #about h3 {
-    color: #cccccc;
+    color: #aaa;
     display: inline-block;
-    margin: 7% 0 0;
-    text-shadow: 1px 1px 1px #111111;
+    font-weight: 200;
+    margin: 35px 0 0;
     width: 100%;
 }
 #about > p {
@@ -298,41 +332,28 @@ nav li.language a {
     text-align: center;
     width: 100%;
 }
-#about .contact {
-    float: left;
-    width: auto;
-}
-#about .contact dd {
-    background: none;
-    font-size: 115%;
-    padding: 5px 0;
-    text-shadow: 1px 1px 1px #222222;
-}
-#about .contact dt {
-    background-color: transparent;
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: 100% auto;
+#about .contact a {
     display: block;
-    height: 40px;
-    margin: 0 12px 0 7px;
-    padding: 0;
-    text-indent: -9000px;
-    width: 23px;
 }
-#about .contact .email {
-    background-image: url(../images/contact-email.png);
+#about .contact i {
+    background: #000;
+    color: #fff;
+    font-size: 120%;
+    height: 50px;
+    line-height: 50px;
+    margin-right: 10px;
+    padding: 0 18px;
+    width: 50px;
 }
-#about .contact .linkedin {
-    background-image: url(../images/contact-linkedin.png);
-}
-#about .contact .telefone {
-    background-image: url(../images/contact-telefone.png);
+#about .contact li {
+    float: left;
+    list-style: none;
+    margin-bottom: 5px;
 }
 #about .percent dd {
     padding: 0 2%;
     text-align: right;
-    text-shadow: 1px 1px 1px #222222;
+    text-shadow: 1px 1px 1px #222;
 }
 #about .percent dt {
     padding: 0 1%;
@@ -369,24 +390,6 @@ nav li.language a {
 #about .percent100 {
     width: 72%;
 }
-#bio-photo {
-    background-image: url(../images/bio.jpg);
-    background-repeat: no-repeat;
-    background-position: 0 0;
-    background-size: 138px 138px;
-    border: 1px solid #000000;
-    float: left;
-    height: 138px;
-    margin: 0 10px 0 0;
-    width: 138px;
-}
-#bio-photo div {
-    background: rgba(0, 0, 0, 0.4);
-    height: 138px;
-}
-#bio-photo div:hover {
-    background: rgba(0, 0, 0, 0.3);
-}
 .hint--right:after {
     margin-bottom: -20px !important;
 }
@@ -395,142 +398,94 @@ nav li.language a {
     padding: 14px 10px !important;
 }
 
-/* Gists */
-#gists {
-    background: #eeeeee;
-    background: -moz-linear-gradient(top, #eeeeee 0%, #ffffff 100%);
-    background: -webkit-gradient(left top, left bottom, color-stop(0%, #eeeeee), color-stop(100%, #ffffff));
-    background: -webkit-linear-gradient(top, #eeeeee 0%, #ffffff 100%);
-    background: -o-linear-gradient(top, #eeeeee 0%, #ffffff 100%);
-    background: -ms-linear-gradient(top, #eeeeee 0%, #ffffff 100%);
-    background: linear-gradient(to bottom, #eeeeee 0%, #ffffff 100%);
-    color: #666666;
-    padding: 4% 10% 5%;
-}
-#gists a {
-    color: #777777;
-    text-decoration: underline;
-}
-#gists .gists {
-    margin: 40px -0.5% 0;
-    overflow: hidden;
-}
-#gists .gists li {
-    background: #cccccc;
-    float: left;
-    list-style: none;
-    margin: 0.5%;
-    width: 99%;
-}
-#gists .gists li:hover {
-    background: #dddddd;
-}
-#gists .gists li.active {
-    background: #999999;
-}
-#gists .gists li.active > a {
-    color: #ffffff;
-}
-#gists .gists li > a {
-    color: #333333;
-    display: block;
-    padding: 10px;
-    text-decoration: none;
-    width: 100%;
-}
-#gists .gist {
-    display: none;
-}
-#gists .gist-file {
-    margin: 0;
-}
-
 /* Portfolio */
 #portfolio {
-    background: #666666;
-    background: -moz-linear-gradient(top, #666666 0%, #777777 100%);
-    background: -webkit-gradient(left top, left bottom, color-stop(0%, #666666), color-stop(100%, #777777));
-    background: -webkit-linear-gradient(top, #666666 0%, #777777 100%);
-    background: -o-linear-gradient(top, #666666 0%, #777777 100%);
-    background: -ms-linear-gradient(top, #666666 0%, #777777 100%);
-    background: linear-gradient(to bottom, #666666 0%, #777777 100%);
-    color: #dddddd;
+    background: #666;
+    background: -moz-linear-gradient(top, #666 0%, #777 100%);
+    background: -webkit-gradient(left top, left bottom, color-stop(0%, #666), color-stop(100%, #777));
+    background: -webkit-linear-gradient(top, #666 0%, #777 100%);
+    background: -o-linear-gradient(top, #666 0%, #777 100%);
+    background: -ms-linear-gradient(top, #666 0%, #777 100%);
+    background: linear-gradient(to bottom, #666 0%, #777 100%);
+    color: #ddd;
     padding: 4% 10%;
 }
-#portfolio .box > div {
-    background-repeat: no-repeat;
-    background-position: 0 0;
-    background-size: 100% auto;
-    opacity: 0.7;
-    position: relative;
+#portfolio h3 {
+    color: #aaa;
+    font-size: 85%;
+    font-weight: 200;
+    padding: 0;
 }
-#portfolio .box > div div {
-    display: block;
-    opacity: 0;
-    position: absolute;
-    text-align: center;
-    top: 0;
-    width: 100%;
-    z-index: 0;
-}
-#portfolio .box > div div:hover {
-    background: rgba(255, 255, 255, 0.9);
-    color: #111111;
-    opacity: 1;
-}
-#portfolio .box > div a,
-#portfolio .box > div h3 {
-    border-bottom: 1px solid #666666;
+#portfolio h4 {
+    color: #fff;
     display: inline-block;
-    margin: 0 10%;
-    width: 80%;
+    font-size: 130%;
+    line-height: 1.2em;
+    padding: 3px 0 10px;
 }
-#portfolio .box > div a {
-    color: #333333;
-    font-size: 90%;
-    font-weight: bold;
-    height: 30px;
-    line-height: 30px;
-    text-decoration: none;
-}
-#portfolio .box > div a:hover {
-    background: #cccccc;
-}
-#portfolio .box > div a span {
-    font-weight: normal;
-}
-#portfolio .box > div h3 {
-    font-size: 120%;
-    line-height: 20px;
-    padding: 28px 0 10px;
+#portfolio i {
+    color: #fff;
+    margin-right: 10px;
+    width: 14px;
 }
 #portfolio img {
-    box-shadow: 0px 0px 5px #222222;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+    margin-top: 10px;
     width: 100%;
 }
 #portfolio li {
+    float: left;
     list-style: none;
+    margin: 0 5px 5px 0;
 }
 #portfolio > p {
     margin: 0 0 40px;
+}
+#portfolio .columns a {
+    background: #555;
+    color: #ccc;
+    display: block;
+    font-size: 90%;
+    font-weight: 400;
+    height: 36px;
+    line-height: 36px;
+    padding: 0 10px;
+    text-align: center;
+    text-decoration: none;
+    width: 36px;
+}
+#portfolio .columns a:hover {
+    background: #ccc;
+}
+#portfolio .columns a:hover i {
+    color: #000;
+}
+#portfolio .tags li {
+    color: #444;
+    font-size: 90%;
+    line-height: 1em;
+    margin: 5px 10px 0 0;
 }
 
 /* Repositories */
 #repositories {
     background-attachment: fixed;
-    background-color: #111111;
+    background-color: #111;
     background-image: url(../images/bg-repositories.jpg);
     background-repeat: no-repeat;
     background-position: center 0;
     background-size: 100% auto;
-    color: #dddddd;
+    color: #ddd;
 }
 #repositories a {
-    color: #bbbbbb;
+    color: #bbb;
     text-decoration: underline;
 }
 #repositories > div {
     background: rgba(0, 0, 0, 0.7);
+}
+#repositories .box {
+    margin: 3% 0 0;
 }
 #repositories .box > div div {
     background-repeat: no-repeat;
@@ -540,7 +495,7 @@ nav li.language a {
 }
 #repositories .box > div div p {
     clear: left;
-    color: #888888;
+    color: #888;
     float: left;
     line-height: 20px;
     padding: 3px 0 8px 60px;
@@ -554,13 +509,10 @@ nav li.language a {
     margin: 0 0 40px;
 }
 #repositories > p a:hover {
-    color: #666666;
-}
-#repositories .box {
-    margin: 3% -2% 0;
+    color: #666;
 }
 #repositories .boxes {
-    border-bottom: 1px solid #444444;
+    border-bottom: 1px solid #444;
     overflow: hidden;
     margin: 10px 0 0 60px;
 }
@@ -576,15 +528,15 @@ nav li.language a {
     background: #cccccc;
 }
 #repositories .boxes li a {
-    border-top: 1px solid #444444;
-    color: #cccccc;
+    border-top: 1px solid #444;
+    color: #ccc;
     display: block;
     line-height: 2.2em;
     text-align: center;
     text-decoration: none;
 }
 #repositories .boxes li a:hover {
-    color: #111111;
+    color: #111;
 }
 #repositories .preview-bluray-dvd-cd-book-collection div {
     background-image: url(../images/preview-bluray-dvd-cd-book-collection.png);
@@ -598,41 +550,29 @@ nav li.language a {
 }
 
 /* Media-queries */
-@media only screen and (max-device-width: 480px), only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:portrait), only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:landscape) {
-    header > div div {
-        margin: 4% 10% 0;
-        width: 80%;
-    }
-    nav {
-        display: none;
-    }
-    #repositories {
-        background-size: auto 100%;  
-    }
-    #repositories .boxes li a {
-        font-size: 110%;
-    }
-    .boxes > li {
-        width: 100%;
+@media screen and (min-width: 1600px) {
+    .columns {
+        column-count: 4;
     }
 }
 @media screen and (max-width: 1024px) {
+    #portfolio .columns a {
+        height: 30px;
+        line-height: 30px;
+        padding: 0 8px;
+        width: 30px;
+    }
     .boxes > li {
         width: 47.5%;
     }
     .boxes > li:nth-child(2n+1) {
         float: right;
     }
+    .columns {
+        column-count: 2;
+    }
 }
 @media screen and (max-width: 800px) {
-    header > div div {
-        float: left;
-        padding: 8% 10% 0;
-        width: 80%;
-    }
-    header p {
-        text-align: left;
-    }
     nav li a {
         font-size: 120%;
     }
@@ -646,6 +586,7 @@ nav li.language a {
     }
     #about > div.right li {
         float: left;
+        margin: 0 5px 5px 0;
     }
     #about > div.right p {
         float: left;
@@ -665,10 +606,24 @@ nav li.language a {
     }
 }
 @media screen and (max-width: 600px) {
+    header:before {
+        background: rgba(0, 0, 0, 0.7);
+    }
+    header div {
+        bottom: 120px;
+        left: 10%;
+        position: absolute;
+        right: 0;
+        width: 90%;
+    }
     header p {
+        color: #fff;
         transition: none;
         -moz-transition: none;
         -webkit-transition: none;
+    }
+    header p a {
+        color: #fff;
     }
     header p.opacity {
         opacity: 1;
@@ -679,6 +634,23 @@ nav li.language a {
     .box .box3,
     .box .box4 {
         width: 96%;
+    }
+    .boxes > li {
+        width: 100%;
+    }
+    .columns {
+        column-count: 1;
+    }
+}
+@media only screen and (max-device-width: 480px), only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:portrait), only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:landscape) {
+    nav {
+        display: none;
+    }
+    #repositories {
+        background-size: auto 100%;  
+    }
+    #repositories .boxes li a {
+        font-size: 110%;
     }
     .boxes > li {
         width: 100%;
