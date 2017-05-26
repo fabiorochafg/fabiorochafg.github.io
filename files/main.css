@@ -257,23 +257,31 @@ footer span {
     padding-bottom: 50px;
     width: 100%;
 }
-.mauticform_wrapper {
-        width: 50%;
-    margin: 0 auto;
-    border: 1px solid #fff;
-    padding: 100px;
+.flex-container {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;    
+    -webkit-flex-direction: row;
+    -moz-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: wrap;
+    -webkit-flex-wrap: wrap;
+    -moz-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-content: stretch;
+    align-items: stretch;
+    margin: 0 -20px;
+    width: calc(100% + 40px);
 }
-.mauticform-errormsg {
-    color: #900;
-}
-.mauticform-helpmessage {
-    color: #ccc;
-    display: block;
-    font-size: 95%;
-    font-weight: 200;
-    line-height: 1.3em;
-    padding-bottom: 10px;
-    padding-top: 20px;
+.flex-container > div {
+    flex-grow: 1;
+    flex-shrink: 0;
+    flex-basis: 200px;
+    padding: 0 20px
 }
 
 /* About */
@@ -287,48 +295,35 @@ footer span {
     background: linear-gradient(to bottom, #222 0%, #333 100%);
     color: #bbb;
 }
-#about > div.left {
-    float: left;
-    width: 42.5%;
-}
-#about > div.right {
-    float: right;
-    width: 52.5%;
-}
-#about > div.right h3 {
-    text-align: right;
-}
-#about > div.right li {
+#about li {
     background: #000;
-    float: right;
+    float: left;
     font-size: 95%;
     list-style: none;
-    margin: 0 0 5px 5px;
+    margin: 0 5px 5px 0;
     padding: 4px 12px;
 }
-#about > div.right p {
-    float: right;
+#about div p {
     font-size: 160%;
-    padding: 0 0 5px;
-    text-align: right;
+    padding: 0 0 10px;
 }
-#about > div.right p:nth-child(2) {
+#about div p:nth-child(2) {
     font-size: 160%;
     width: 90%;
 }
-#about > div.right p:nth-child(3) {
+#about div p:nth-child(3) {
     font-size: 140%;
     width: 80%;
 }
-#about > div.right p:nth-child(4) {
+#about div p:nth-child(4) {
     font-size: 120%;
     width: 70%;
 }
-#about > div.right p:nth-child(5) {
+#about div p:nth-child(5) {
     font-size: 100%;
     width: 60%;
 }
-#about > div.right p a {
+#about p a {
     text-decoration: underline;
 }
 #about a {
@@ -350,7 +345,6 @@ footer span {
     height: 30px;
     line-height: 30px;
     margin: 0 0 10px;
-    padding: 5px 15px;
 }
 #about dd {
     background: #555;
@@ -378,30 +372,13 @@ footer span {
     text-align: center;
     width: 100%;
 }
-#about .contact a {
-    display: block;
-}
-#about .contact i {
-    background: #000;
-    color: #fff;
-    font-size: 120%;
-    height: 50px;
-    line-height: 50px;
-    margin-right: 10px;
-    padding: 0 18px;
-    width: 50px;
-}
-#about .contact li {
-    float: left;
-    list-style: none;
-    margin-bottom: 5px;
-}
 #about .percent dd {
     padding: 0 2%;
     text-align: right;
     text-shadow: 1px 1px 1px #222;
 }
 #about .percent dt {
+    font-size: 85%;
     padding: 0 1%;
     text-align: center;
     width: 28%;
@@ -595,6 +572,59 @@ footer span {
     background-position: 0 1px;
 }
 
+/* CONTACT */
+#contact > div.left {
+    float: left;
+    padding-top: 100px;
+    width: 42%;
+}
+#contact > div.right {
+    border-left: 1px solid #fff;
+    float: right;
+    width: 58%;
+}
+#contact .contact a {
+    display: block;
+}
+#contact .contact i {
+    background: #fff;
+    color: #000;
+    float: right;
+    font-size: 120%;
+    height: 50px;
+    line-height: 50px;
+    margin-left: 10px;
+    padding: 0 18px;
+    width: 50px;
+}
+#contact .contact li {
+    border-bottom: 1px solid #fff;
+    color: #fff;
+    display: block;
+    float: right;
+    line-height: 50px;
+    list-style: none;
+    margin-bottom: 15px;
+    width: 100%;
+}
+.mauticform_wrapper {
+    margin: 0 auto;
+    padding: 100px;
+    width: 100%;
+}
+.mauticform-errormsg {
+    color: #900;
+}
+.mauticform-helpmessage {
+    color: #ccc;
+    display: block;
+    font-size: 95%;
+    font-weight: 200;
+    line-height: 1.3em;
+    padding-bottom: 10px;
+    padding-top: 20px;
+}
+
 /* Media-queries */
 @media screen and (min-width: 1600px) {
     .columns {
@@ -622,19 +652,16 @@ footer span {
     nav li a {
         font-size: 120%;
     }
-    #about > div.left,
-    #about > div.right {
+    #contact > div.left,
+    #contact > div.right {
         float: left;
         width: 100%;
     }
-    #about > div.right h3 {
-        text-align: left;
-    }
-    #about > div.right li {
+    #about li {
         float: left;
         margin: 0 5px 5px 0;
     }
-    #about > div.right p {
+    #about p {
         float: left;
         font-size: 115% !important;
         text-align: left;
@@ -700,5 +727,11 @@ footer span {
     }
     .boxes > li {
         width: 100%;
+    }
+    .flex-container {
+        -webkit-flex-flow: column nowrap;
+        -moz-flex-flow: column nowrap;
+        -ms-flex-flow: column nowrap;
+        flex-flow: column nowrap;
     }
 }
