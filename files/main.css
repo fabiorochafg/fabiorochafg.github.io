@@ -36,9 +36,17 @@ body {
 }
 button[type="submit"] {
     background-color: #666;
-    color: #000; 
+    color: #fff; 
+    font-size: 140%;
     padding: 20px;
     width: 100%;
+    -webkit-transition: all 0.4s;
+    -moz-transition: all 0.4s;
+    -o-transition: all 0.4s;
+    transition: all 0.4s;
+}
+button[type="submit"]:hover {
+    background-color: #333;
 }
 code {
     clear: left;
@@ -82,7 +90,7 @@ input[type="email"],
 input[type="text"] {
     font-size: 120%;
     margin-bottom: 2px;
-    padding: 15px 30px;
+    padding: 15px 20px;
     width: 100%;
 }
 label {
@@ -94,7 +102,8 @@ ul {
 }
 textarea {
     font-size: 120%;
-    padding: 15px 30px;
+    height: 200px;
+    padding: 15px 20px;
     width: 100%;
 }
 
@@ -253,6 +262,18 @@ footer span {
     margin: 0 auto;
     border: 1px solid #fff;
     padding: 100px;
+}
+.mauticform-errormsg {
+    color: #900;
+}
+.mauticform-helpmessage {
+    color: #ccc;
+    display: block;
+    font-size: 95%;
+    font-weight: 200;
+    line-height: 1.3em;
+    padding-bottom: 10px;
+    padding-top: 20px;
 }
 
 /* About */
