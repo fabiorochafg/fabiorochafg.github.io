@@ -36,7 +36,8 @@ body {
 }
 button[type="submit"] {
     background-color: #666;
-    color: #fff; 
+    color: #fff;
+    cursor: pointer;
     font-size: 140%;
     padding: 20px;
     width: 100%;
@@ -579,7 +580,7 @@ footer span {
     width: 42%;
 }
 #contact > div.right {
-    border-left: 1px solid #fff;
+    border-left: 1px solid #666;
     float: right;
     width: 58%;
 }
@@ -587,21 +588,25 @@ footer span {
     display: block;
 }
 #contact .contact i {
-    background: #fff;
-    color: #000;
-    float: right;
+    background-color: #666;
+    color: #fff;
+    float: left;
     font-size: 120%;
     height: 50px;
     line-height: 50px;
-    margin-left: 10px;
+    margin-right: 30px;
     padding: 0 18px;
     width: 50px;
 }
+#contact .contact a:hover i {
+    background-color: #333;
+}
 #contact .contact li {
-    border-bottom: 1px solid #fff;
+    border-bottom: 1px solid #666;
     color: #fff;
     display: block;
     float: right;
+    font-weight: 200;
     line-height: 50px;
     list-style: none;
     margin-bottom: 15px;
@@ -609,11 +614,13 @@ footer span {
 }
 .mauticform_wrapper {
     margin: 0 auto;
-    padding: 100px;
+    padding: 50px 100px;
     width: 100%;
 }
 .mauticform-errormsg {
-    color: #900;
+    color: #f1c40f;
+    display: block;
+    padding-bottom: 20px;
 }
 .mauticform-helpmessage {
     color: #ccc;
@@ -623,6 +630,13 @@ footer span {
     line-height: 1.3em;
     padding-bottom: 10px;
     padding-top: 20px;
+}
+.mauticform-message {
+    color: #2ecc71;
+    font-size: 120%;
+    font-weight: 200;
+    padding-bottom: 25px;
+    text-align: center;
 }
 
 /* Media-queries */
