@@ -208,9 +208,7 @@ footer p {
     font-size: 85%;
     font-weight: 200;
     padding: 10px 0;
-}
-footer span {
-    padding: 0 2px;
+    text-align: center;
 }
 
 /* Functional Classes */
@@ -671,6 +669,9 @@ footer span {
         float: left;
         width: 100%;
     }
+    #contact > div.right {
+        border: 0 none;
+    }
     #about li {
         float: left;
         margin: 0 5px 5px 0;
@@ -690,6 +691,9 @@ footer span {
     .box .box3,
     .box .box4 {
         width: 46%;
+    }
+    .mauticform_wrapper {
+        padding: 50px 0;
     }
 }
 @media screen and (max-width: 600px) {
