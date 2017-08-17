@@ -116,6 +116,7 @@ header {
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
+    filter: grayscale(1);
     height: 100vh;
 }
 header:before {
