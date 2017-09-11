@@ -69,7 +69,10 @@ h1 {
     padding: 4% 10%;
 }
 h1 a {
-    background: url(../images/logo.png) no-repeat -6px 0;
+    background-image: url(../images/logo.png);
+    background-position: -6px 0;
+    background-repeat: no-repeat;
+    background-size: contain;
     display: block;
     height: 160px;
     text-indent: -9000px;
@@ -120,7 +123,7 @@ header {
     height: 100vh;
 }
 header:before {
-    background: rgba(0, 0, 0, 0.1);
+    background-color: rgba(0, 0, 0, 0.1);
     bottom: 0;
     content: "";
     left: 0;
@@ -168,7 +171,7 @@ header p:nth-child(3) {
 
 /* Nav */
 nav.container {
-    background: #000;
+    background-color: #000;
     bottom: 0;
     height: 50px;
     padding: 0 10%;
@@ -286,7 +289,7 @@ footer p {
 
 /* About */
 #about {
-    background: #222;
+    background-color: #222;
     background: -moz-linear-gradient(top, #222 0%, #333 100%);
     background: -webkit-gradient(left top, left bottom, color-stop(0%, #222), color-stop(100%, #333));
     background: -webkit-linear-gradient(top, #222 0%, #333 100%);
