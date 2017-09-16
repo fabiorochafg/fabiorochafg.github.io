@@ -49,12 +49,6 @@ button[type="submit"] {
 button[type="submit"]:hover {
     background-color: #333;
 }
-code {
-    clear: left;
-    display: block;
-    font-size: 95%;
-    padding-left: 60px;
-}
 dd {
     font-weight: 600;
     padding-bottom: 2px;
@@ -269,7 +263,7 @@ footer p {
     -webkit-flex-direction: row;
     -moz-flex-direction: row;
     -ms-flex-direction: row;
-    flex-direction: wrap;
+    flex-direction: row;
     -webkit-flex-wrap: wrap;
     -moz-flex-wrap: wrap;
     -ms-flex-wrap: wrap;
@@ -285,6 +279,27 @@ footer p {
     flex-shrink: 0;
     flex-basis: 200px;
     padding: 0 20px
+}
+.overlay,
+.overlay > * {
+    position: relative;
+}
+.overlay:before {
+    background-color: rgba(0, 0, 0, 0.65);
+    bottom: 0;
+    content: "";
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+.tags li {
+    color: #444;
+    float: left;
+    font-size: 90%;
+    line-height: 1em;
+    list-style: none;
+    margin: 5px 10px 0 0;
 }
 
 /* About */
@@ -486,12 +501,6 @@ footer p {
 #portfolio .columns a:hover i {
     color: #000;
 }
-#portfolio .tags li {
-    color: #444;
-    font-size: 90%;
-    line-height: 1em;
-    margin: 5px 10px 0 0;
-}
 
 /* Repositories */
 #repositories {
@@ -507,29 +516,25 @@ footer p {
     color: #bbb;
     text-decoration: underline;
 }
-#repositories > div {
-    background: rgba(0, 0, 0, 0.7);
-}
 #repositories .box {
     margin: 3% 0 0;
 }
-#repositories .box > div div {
-    background-repeat: no-repeat;
-    background-position: 0 5px;
-    background-size: 45px auto;
-    overflow: hidden;
+#repositories .box4 div {
+    float: left;
+    width: calc(100% - 110px);
 }
-#repositories .box > div div p {
-    clear: left;
+#repositories .box h3 {
+    padding-bottom: 0;
+}
+#repositories .box i {
+    float: left;
+    font-size: 560%;
+    padding-bottom: 10px;
+    width: 110px;
+}
+#repositories .box p {
     color: #888;
-    float: left;
     line-height: 20px;
-    padding: 3px 0 8px 60px;
-}
-#repositories h3 {
-    float: left;
-    line-height: 24px;
-    padding: 0 0 0 60px;
 }
 #repositories > p {
     margin: 0 0 40px;
@@ -539,8 +544,9 @@ footer p {
 }
 #repositories .boxes {
     border-bottom: 1px solid #444;
-    overflow: hidden;
-    margin: 10px 0 0 60px;
+    display: inline-block;
+    margin-top: 10px;
+    width: 100%;
 }
 #repositories .boxes li {
     float: left;
@@ -564,16 +570,6 @@ footer p {
 #repositories .boxes li a:hover {
     color: #111;
 }
-#repositories .preview-bluray-dvd-cd-book-collection div {
-    background-image: url(../images/preview-bluray-dvd-cd-book-collection.png);
-}
-#repositories .preview-html-blank-template div {
-    background-image: url(../images/preview-html-blank-template.png);
-}
-#repositories .preview-joomla-3-blank-template div {
-    background-image: url(../images/preview-joomla-3-blank-template.png);
-    background-position: 0 1px;
-}
 
 /* CONTACT */
 #contact > div.left {
@@ -585,6 +581,9 @@ footer p {
     border-left: 1px solid #666;
     float: right;
     width: 58%;
+}
+#contact h2 + p {
+    color: #eee;
 }
 #contact .contact a {
     display: block;
@@ -725,6 +724,13 @@ footer p {
     }
     #portfolio .box > div a span {
         display: none;
+    }
+    #repositories .box i {
+        font-size: 260%;
+        width: 60px;
+    }
+    #repositories .box4 div {
+        width: calc(100% - 60px);
     }
     .box .box3,
     .box .box4 {
