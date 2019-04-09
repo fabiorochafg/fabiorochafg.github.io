@@ -216,34 +216,6 @@ footer p {
     padding: 4% 10% 6%;
     width: 100%;
 }
-.box {
-    margin: 0 -2%;
-    overflow: hidden;
-    width: 104%;
-}
-.box > div {
-    float: left;
-    margin: 2%;
-    width: 96%;
-}
-.box .box12 {
-    width: 96%;
-}
-.box .box6 {
-    width: 46%;
-}
-.box .box4 {
-    width: 29.3333%;
-}
-.box .box3 {
-    width: 21%;
-}
-.box .box2 {
-    width: 12.6666%;
-}
-.box .box1 {
-    width: 4.3333%;
-}
 .columns {
     column-count: 3;
     column-gap: 75px;
@@ -504,79 +476,10 @@ footer p {
     color: #000;
 }
 
-/* Repositories */
-#repositories {
-    background-attachment: fixed;
-    background-color: #111;
-    background-image: url(../images/bg-repositories.jpg);
-    background-repeat: no-repeat;
-    background-position: center 0;
-    background-size: 100% auto;
-    color: #ddd;
-}
-#repositories a {
-    color: #bbb;
-    text-decoration: underline;
-}
-#repositories .box {
-    margin: 3% 0 0;
-}
-#repositories .box4 div {
-    float: left;
-    width: calc(100% - 110px);
-}
-#repositories .box h3 {
-    padding-bottom: 0;
-}
-#repositories .box i {
-    float: left;
-    font-size: 560%;
-    padding-bottom: 10px;
-    width: 110px;
-}
-#repositories .box p {
-    color: #888;
-    line-height: 20px;
-}
-#repositories > p {
-    margin: 0 0 40px;
-}
-#repositories > p a:hover {
-    color: #666;
-}
-#repositories .boxes {
-    border-bottom: 1px solid #444;
-    display: inline-block;
-    margin-top: 10px;
-    width: 100%;
-}
-#repositories .boxes li {
-    float: left;
-    font-size: 90%;
-    list-style: none;
-    margin: 0;
-    text-align: right;
-    width: 100%;
-}
-#repositories .boxes li:hover {
-    background: #cccccc;
-}
-#repositories .boxes li a {
-    border-top: 1px solid #444;
-    color: #ccc;
-    display: block;
-    line-height: 2.2em;
-    text-align: center;
-    text-decoration: none;
-}
-#repositories .boxes li a:hover {
-    color: #111;
-}
-
 /* CONTACT */
 #contact > div.left {
     float: left;
-    padding-top: 100px;
+    padding-top: 40px;
     width: 42%;
 }
 #contact > div.right {
@@ -615,32 +518,6 @@ footer p {
     margin-bottom: 15px;
     width: 100%;
 }
-.mauticform_wrapper {
-    margin: 0 auto;
-    padding: 50px 100px;
-    width: 100%;
-}
-.mauticform-errormsg {
-    color: #f1c40f;
-    display: block;
-    padding-bottom: 20px;
-}
-.mauticform-helpmessage {
-    color: #ccc;
-    display: block;
-    font-size: 95%;
-    font-weight: 200;
-    line-height: 1.3em;
-    padding-bottom: 10px;
-    padding-top: 20px;
-}
-.mauticform-message {
-    color: #2ecc71;
-    font-size: 120%;
-    font-weight: 200;
-    padding-bottom: 25px;
-    text-align: center;
-}
 
 /* Media-queries */
 @media screen and (min-width: 1600px) {
@@ -654,12 +531,6 @@ footer p {
         line-height: 30px;
         padding: 0 8px;
         width: 30px;
-    }
-    .boxes > li {
-        width: 47.5%;
-    }
-    .boxes > li:nth-child(2n+1) {
-        float: right;
     }
     .columns {
         column-count: 2;
@@ -687,16 +558,6 @@ footer p {
         text-align: left;
         width: 100% !important;
     }
-    #repositories {
-        background-size: auto 100%;  
-    }
-    #repositories .box {
-        margin: 7% -2% 0;
-    }
-    .box .box3,
-    .box .box4 {
-        width: 46%;
-    }
     .mauticform_wrapper {
         padding: 50px 0;
     }
@@ -706,7 +567,7 @@ footer p {
         background: rgba(0, 0, 0, 0.7);
     }
     header div {
-        bottom: 120px;
+        bottom: 40px;
         left: 10%;
         position: absolute;
         right: 0;
@@ -714,6 +575,7 @@ footer p {
     }
     header p {
         color: #fff;
+        font-size: 220%;
         transition: none;
         -moz-transition: none;
         -webkit-transition: none;
@@ -724,39 +586,19 @@ footer p {
     header p.opacity {
         opacity: 1;
     }
-    #portfolio .box > div a span {
-        display: none;
-    }
-    #repositories .box i {
-        font-size: 260%;
-        width: 60px;
-    }
-    #repositories .box4 div {
-        width: calc(100% - 60px);
-    }
-    .box .box3,
-    .box .box4 {
-        width: 96%;
-    }
-    .boxes > li {
-        width: 100%;
-    }
     .columns {
         column-count: 1;
     }
 }
 @media only screen and (max-device-width: 480px), only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:portrait), only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:landscape) {
+    header {
+        background-attachment: scroll;
+    }
     nav {
         display: none;
     }
-    #repositories {
-        background-size: auto 100%;  
-    }
-    #repositories .boxes li a {
-        font-size: 110%;
-    }
-    .boxes > li {
-        width: 100%;
+    #contact .contact i {
+        margin-right: 15px;
     }
     .flex-container {
         -webkit-flex-flow: column nowrap;
