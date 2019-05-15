@@ -456,6 +456,9 @@ footer p {
 #portfolio > p {
     margin: 0 0 40px;
 }
+#portfolio > p + p {
+    margin-top: -40px;
+}
 #portfolio .columns a {
     background: #555;
     color: #ccc;
