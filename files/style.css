@@ -12,19 +12,17 @@
     --gray-200: #ddd;
     --gray-100: #eee;
     --white:    #fff;
-    --color-antoanete:       #faa179;
-    --color-ctir:            #03256C;
-    --color-ctir-em-numeros: #005EB0;
+    --color-antoanete:       #16425B;
     --color-etir:            #434456;
-    --color-evg:             #FF5722;
+    --color-evg:             #00918E;
     --color-evg-em-numeros:  #337CA0;
     --color-foco:            #F78749;
     --color-icmbio:          #003f0f;
-    --color-ifrn:            #147a02;
+    --color-ifrn:            #3C9055;
     --color-hatha:           #4e3241;
     --color-maisculturarn:   #0087A5;
     --color-pep:             #004E49;
-    --color-portal-suap:     #6baa75;
+    --color-portal-suap:     #0DA06F;
     --color-suap:            #248232;
     --border-color:          rgba(0, 0, 0, 0.25);
 }
@@ -313,12 +311,6 @@ section.container {
 }
 [data-portfolio="antoanete"] {
     background-color: var(--color-antoanete);
-}
-[data-portfolio="ctir"] {
-    background-color: var(--color-ctir);
-}
-[data-portfolio="ctir-em-numeros"] {
-    background-color: var(--color-ctir-em-numeros);
 }
 [data-portfolio="etir"] {
     background-color: var(--color-etir);
