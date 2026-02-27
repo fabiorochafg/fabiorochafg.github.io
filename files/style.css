@@ -13,16 +13,17 @@
     --gray-100: #eee;
     --white:    #fff;
     --color-antoanete:       #16425B;
+    --color-enap-observatorio: #024248;
     --color-etir:            #434456;
     --color-evg:             #00918E;
     --color-evg-em-numeros:  #337CA0;
     --color-foco:            #F78749;
-    --color-icmbio:          #003f0f;
-    --color-ifrn:            #3C9055;
-    --color-hatha:           #4e3241;
+    --color-ifrn:            #357E4B;
+    --color-hatha:           #4a273a;
     --color-maisculturarn:   #0087A5;
     --color-pep:             #004E49;
     --color-portal-suap:     #0DA06F;
+    --color-solum:           #2A6041;
     --color-suap:            #248232;
     --border-color:          rgba(0, 0, 0, 0.25);
 }
@@ -312,6 +313,9 @@ section.container {
 [data-portfolio="antoanete"] {
     background-color: var(--color-antoanete);
 }
+[data-portfolio="enap-observatorio"] {
+    background-color: var(--color-enap-observatorio);
+}
 [data-portfolio="etir"] {
     background-color: var(--color-etir);
 }
@@ -323,9 +327,6 @@ section.container {
 }
 [data-portfolio="foco"] {
     background-color: var(--color-foco);
-}
-[data-portfolio="icmbio"] {
-    background-color: var(--color-icmbio);
 }
 [data-portfolio="ifrn"] {
     background-color: var(--color-ifrn);
@@ -341,6 +342,9 @@ section.container {
 }
 [data-portfolio="portal-suap"] {
     background-color: var(--color-portal-suap);
+}
+[data-portfolio="solum"] {
+    background-color: var(--color-solum);
 }
 [data-portfolio="suap"] {
     background-color: var(--color-suap);
