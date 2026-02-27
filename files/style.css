@@ -1,6 +1,6 @@
 /* CSS Document - Developed by Fabio Rocha (https://fabiorochafg.github.io | fabiorochafg@gmail.com) */
 
-@import url(http://fonts.googleapis.com/css?family=Titillium+Web:200,400,600);
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap');
 
 /* Base */
 :root {
@@ -157,22 +157,28 @@ header.container {
     padding-bottom: 0;
 }
 header h1 {
+    background-image: url(../images/bio.png);
+    background-position: bottom right;
+    background-repeat: no-repeat;
+    background-size: auto 100%;
+    border-radius: 25px;
     display: block;
     padding: 0;
     position: relative;
-    width: calc(7rem + 10px);
+    width: 13rem;
     z-index: 1;
 }
 header h1 a.logo {
     background-color: var(--black);
-    border-radius: 25px 25px 125px 25px;
+    border-radius: 25px 0 125px 25px;
     color: var(--white);
-    display: block;
+    display: flex;
     font-size: 3.25rem;
     height: 7rem;
     letter-spacing: -2px;
+    outline: 3px solid var(--white);
+    padding-top: .65rem;
     padding-left: 1rem;
-    text-align: left;
     text-decoration: none;
     width: 7rem;
 }
@@ -368,7 +374,7 @@ footer p + p {
     font-size: .9rem;
 }
 footer p strong {
-    font-weight: 900;
+    font-weight: 700;
 }
 
 /* Classes Funcionais */
